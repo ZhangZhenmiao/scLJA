@@ -1,0 +1,1 @@
+int execute_command(const std::string& cmd, const std::string& filename = "/dev/null");

@@ -1,0 +1,7 @@
+/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/CMakeFiles/scLJA.dir
+/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/CMakeFiles/edit_cache.dir
+/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/CMakeFiles/rebuild_cache.dir
+/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/CMakeFiles/list_install_components.dir
+/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/CMakeFiles/install.dir
+/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/CMakeFiles/install/local.dir
+/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/CMakeFiles/install/strip.dir
