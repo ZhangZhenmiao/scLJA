@@ -91,7 +91,7 @@ void SAGAligner::sortFastqByName(const fs::path& input_path, const fs::path& out
     gzclose(file_out);
 }
 
-void SAGAligner::executeBwa(const std::string& ref, const std::string& reads1, const std::string& reads2, const std::string& output) {
+void SAGAligner::executeBwa(const std::string& ref, const std::string& reads1, const std::string& reads2, const std::string& output, bool remove_duplicate) {
     if (fs::exists(output)) {
 #pragma omp critical
         {
@@ -99,27 +99,40 @@ void SAGAligner::executeBwa(const std::string& ref, const std::string& reads1, c
         }
         return;
     }
+
     std::string bc = reads1.substr(reads1.find_last_of('/') + 1, reads1.find_last_of('_') - reads1.find_last_of('/') - 1);
-    std::string cmd = "bwa mem " + ref + " " + reads1 + " " + reads2 + " -R \"@RG\\tID:" + bc + "\\tSM:" + bc + "\\tPL:ILLUMINA\"" + " -t " + std::to_string(thread) + " | samtools sort -@ " + std::to_string(thread) + " -o " + output + ".tmp.bam";
+    if (remove_duplicate) {
+        std::string cmd = "bwa mem " + ref + " " + reads1 + " " + reads2 + " -R \"@RG\\tID:" + bc + "\\tSM:" + bc + "\\tPL:ILLUMINA\"" + " -t " + std::to_string(thread) + " | samtools sort -@ " + std::to_string(thread) + " -o " + output + ".tmp.bam";
 #pragma omp critical
-    {
-        log_verbose("Run BWA for " + reads1 + " and " + reads2 + " ...");
-    }
-    if (execute_command(cmd, output + ".tmp.bam.log") != 0) {
-        throw std::runtime_error("Run BWA: " + cmd + " failed.");
-    }
+        {
+            log_verbose("Run BWA for " + reads1 + " and " + reads2 + " ...");
+        }
+        if (execute_command(cmd, output + ".tmp.bam.log") != 0) {
+            throw std::runtime_error("Run BWA: " + cmd + " failed.");
+        }
 
-    cmd = "picard MarkDuplicates I=" + output + ".tmp.bam O=" + output + " M=" + output + ".dedup_metrics.txt REMOVE_DUPLICATES=true";
-    if (execute_command(cmd, output + ".log") != 0) {
-        throw std::runtime_error("Run Picard: " + cmd + " failed.");
-    }
+        cmd = "picard MarkDuplicates I=" + output + ".tmp.bam O=" + output + " M=" + output + ".dedup_metrics.txt REMOVE_DUPLICATES=true";
+        if (execute_command(cmd, output + ".log") != 0) {
+            throw std::runtime_error("Run Picard: " + cmd + " failed.");
+        }
 
-    if (execute_command("rm " + output + ".tmp.bam") != 0) {
-        throw std::runtime_error("Run rm " + output + ".tmp.bam failed.");
-    }
+        if (execute_command("rm " + output + ".tmp.bam") != 0) {
+            throw std::runtime_error("Run rm " + output + ".tmp.bam failed.");
+        }
 
-    if (execute_command("rm " + output + ".tmp.bam.log") != 0) {
-        throw std::runtime_error("Run rm " + output + ".tmp.bam.log failed.");
+        if (execute_command("rm " + output + ".tmp.bam.log") != 0) {
+            throw std::runtime_error("Run rm " + output + ".tmp.bam.log failed.");
+        }
+    }
+    else {
+        std::string cmd = "bwa mem " + ref + " " + reads1 + " " + reads2 + " -t " + std::to_string(thread) + " | samtools sort -@ " + std::to_string(thread) + " -o " + output;
+#pragma omp critical
+        {
+            log_verbose("Run BWA for " + reads1 + " and " + reads2 + " ...");
+        }
+        if (execute_command(cmd, output + ".log") != 0) {
+            throw std::runtime_error("Run BWA: " + cmd + " failed.");
+        }
     }
 }
 

@@ -22,7 +22,7 @@ public:
     inline static bool get_verbose() { return verbose_; }
 
 private:
-    void executeBwa(const std::string& ref, const std::string& reads1, const std::string& reads2, const std::string& output);
+    void executeBwa(const std::string& ref, const std::string& reads1, const std::string& reads2, const std::string& output, bool remove_duplicate = false);
     std::string getBarcode(const std::string& path);
     void sortFastqByName(const std::filesystem::path& input_path, const std::filesystem::path& output_path);
 
