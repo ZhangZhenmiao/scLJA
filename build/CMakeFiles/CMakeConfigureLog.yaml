@@ -1,0 +1,811 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/comp/zmzhang/software/anaconda3/envs/sclja/share/cmake-4.0/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Linux - 5.4.17-2136.341.3.3.el8uek.x86_64 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/comp/zmzhang/software/anaconda3/envs/sclja/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/comp/zmzhang/software/anaconda3/envs/sclja/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/comp/zmzhang/software/anaconda3/envs/sclja/share/cmake-4.0/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/build/CMakeFiles/4.0.0/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/comp/zmzhang/software/anaconda3/envs/sclja/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/home/comp/zmzhang/software/anaconda3/envs/sclja/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/build/CMakeFiles/CMakeScratch/TryCompile-xTUx1M"
+      binary: "/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/build/CMakeFiles/CMakeScratch/TryCompile-xTUx1M"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/build/CMakeFiles/CMakeScratch/TryCompile-xTUx1M'
+        
+        Run Build Command(s): /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c404e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c404e.dir/build.make CMakeFiles/cmTC_c404e.dir/build
+        gmake[1]: Entering directory '/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/build/CMakeFiles/CMakeScratch/TryCompile-xTUx1M'
+        Building CXX object CMakeFiles/cmTC_c404e.dir/CMakeCXXCompilerABI.cpp.obj
+        /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/c++   -v -o CMakeFiles/cmTC_c404e.dir/CMakeCXXCompilerABI.cpp.obj -c /home/comp/zmzhang/software/anaconda3/envs/sclja/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp
+        Reading specs from /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/specs
+        could not find specs file conda.specs
+        COLLECT_GCC=/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/c++
+        Target: x86_64-conda-linux-gnu
+        Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1740238128824/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1740238128824/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1740238128824/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1740238128824/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1740238128824/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1740238128824/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1740238128824/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++ --with-pkgversion='conda-forge gcc 14.2.0-2' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.2.0 (conda-forge gcc 14.2.0-2) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c404e.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c404e.dir/'
+         /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.2.0/cc1plus -quiet -v -iprefix /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/ -isysroot /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot -D_GNU_SOURCE /home/comp/zmzhang/software/anaconda3/envs/sclja/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_c404e.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/cch5K4cS.s
+        GNU C++17 (conda-forge gcc 14.2.0-2) version 14.2.0 (x86_64-conda-linux-gnu)
+        	compiled by GNU C version 14.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/home/comp/zmzhang/Synteny/edlib-1.2.7/edlib/include"
+        ignoring duplicate directory "/home/comp/zmzhang/software/deflate/include"
+        ignoring nonexistent directory "/home/comp/zmzhang/Synteny/edlib-1.2.7/edlib/include"
+        ignoring duplicate directory "/home/comp/zmzhang/software/expat-2.4.1_install/include"
+        ignoring duplicate directory "/home/comp/zmzhang/software/bzip2_install/include"
+        ignoring duplicate directory "/home/comp/zmzhang/software/openmpi-4.1.1_install/include"
+        ignoring duplicate directory "/home/comp/zmzhang/software/gsl-2.6_install/include"
+        ignoring duplicate directory "/home/comp/zmzhang/software/boost_1_73_0_install/include"
+        ignoring duplicate directory "/home/comp/zmzhang/software/sparsehash_install/include"
+        ignoring duplicate directory "/home/comp/zmzhang/software/zlib-1.2.11_install/include"
+        ignoring duplicate directory "/home/comp/zmzhang/software/arpack-ng-3.8.0_install/include"
+        ignoring duplicate directory "/home/comp/zmzhang/software/htslib_install/include"
+        ignoring duplicate directory "/home/comp/zmzhang/software/deflate/include"
+        ignoring nonexistent directory "/home/comp/zmzhang/Synteny/edlib-1.2.7/edlib/include"
+        ignoring duplicate directory "/home/comp/zmzhang/software/expat-2.4.1_install/include"
+        ignoring duplicate directory "/home/comp/zmzhang/software/bzip2_install/include"
+        ignoring duplicate directory "/home/comp/zmzhang/software/openmpi-4.1.1_install/include"
+        ignoring duplicate directory "/home/comp/zmzhang/software/gsl-2.6_install/include"
+        ignoring duplicate directory "/home/comp/zmzhang/software/boost_1_73_0_install/include"
+        ignoring duplicate directory "/home/comp/zmzhang/software/sparsehash_install/include"
+        ignoring duplicate directory "/home/comp/zmzhang/software/zlib-1.2.11_install/include"
+        ignoring duplicate directory "/home/comp/zmzhang/software/arpack-ng-3.8.0_install/include"
+        ignoring duplicate directory "/home/comp/zmzhang/software/htslib_install/include"
+        ignoring duplicate directory "/home/comp/zmzhang/software/deflate/include"
+        ignoring nonexistent directory "/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/include"
+        ignoring duplicate directory "/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++"
+        ignoring duplicate directory "/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++/x86_64-conda-linux-gnu"
+        ignoring duplicate directory "/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++/backward"
+        ignoring duplicate directory "/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.2.0/include"
+        ignoring nonexistent directory "/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"
+        ignoring duplicate directory "/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.2.0/include-fixed"
+        ignoring nonexistent directory "/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/comp/zmzhang/software/expat-2.4.1_install/include
+         /home/comp/zmzhang/software/bzip2_install/include
+         /home/comp/zmzhang/software/openmpi-4.1.1_install/include
+         /home/comp/zmzhang/software/gsl-2.6_install/include
+         /home/comp/zmzhang/software/boost_1_73_0_install/include
+         /home/comp/zmzhang/software/sparsehash_install/include
+         /home/comp/zmzhang/software/zlib-1.2.11_install/include
+         /home/comp/zmzhang/software/arpack-ng-3.8.0_install/include
+         /home/comp/zmzhang/software/htslib_install/include
+         /home/comp/zmzhang/software/deflate/include
+         .
+         /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++
+         /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++/x86_64-conda-linux-gnu
+         /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++/backward
+         /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/include
+         /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/include-fixed
+         /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/include
+        End of search list.
+        Compiler executable checksum: 471cb6a3a6e905902e47e89d6a5c33f7
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c404e.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c404e.dir/'
+         /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_c404e.dir/CMakeCXXCompilerABI.cpp.obj /tmp/cch5K4cS.s
+        GNU assembler version 2.43 (x86_64-conda-linux-gnu) using BFD version (GNU Binutils) 2.43
+        COMPILER_PATH=/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.2.0/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../libexec/gcc/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/:/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib/:/home/comp/zmzhang/software/lib/../lib/:/home/comp/zmzhang/software/bzip2_install/lib/../lib/:/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib/:/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib/:/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib/:/home/comp/zmzhang/software/sparsehash_install/lib/../lib/:/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib/:/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib/:/home/comp/zmzhang/software/htslib_install/lib/../lib/:/home/comp/zmzhang/software/deflate/lib/../lib/:/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib/:/home/comp/zmzhang/software/lib/../lib/:/home/comp/zmzhang/software/bzip2_install/lib/../lib/:/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib/:/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib/:/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib/:/home/comp/zmzhang/software/sparsehash_install/lib/../lib/:/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib/:/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib/:/home/comp/zmzhang/software/htslib_install/lib/../lib/:/home/comp/zmzhang/software/deflate/lib/../lib/:/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib/:/home/comp/zmzhang/software/lib/../lib/:/home/comp/zmzhang/software/bzip2_install/lib/../lib/:/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib/:/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib/:/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib/:/home/comp/zmzhang/software/sparsehash_install/lib/../lib/:/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib/:/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib/:/home/comp/zmzhang/software/htslib_install/lib/../lib/:/home/comp/zmzhang/software/deflate/lib/../lib/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../lib/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/comp/zmzhang/software/expat-2.4.1_install/lib/:/home/comp/zmzhang/software/lib/:/home/comp/zmzhang/software/bzip2_install/lib/:/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/:/home/comp/zmzhang/software/gsl-2.6_install/lib/:/home/comp/zmzhang/software/boost_1_73_0_install/lib/:/home/comp/zmzhang/software/sparsehash_install/lib/:/home/comp/zmzhang/software/zlib-1.2.11_install/lib/:/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/:/home/comp/zmzhang/software/htslib_install/lib/:/home/comp/zmzhang/software/deflate/lib/:/home/comp/zmzhang/software/expat-2.4.1_install/lib/:/home/comp/zmzhang/software/lib/:/home/comp/zmzhang/software/bzip2_install/lib/:/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/:/home/comp/zmzhang/software/gsl-2.6_install/lib/:/home/comp/zmzhang/software/boost_1_73_0_install/lib/:/home/comp/zmzhang/software/sparsehash_install/lib/:/home/comp/zmzhang/software/zlib-1.2.11_install/lib/:/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/:/home/comp/zmzhang/software/htslib_install/lib/:/home/comp/zmzhang/software/deflate/lib/:/home/comp/zmzhang/software/expat-2.4.1_install/lib/:/home/comp/zmzhang/software/lib/:/home/comp/zmzhang/software/bzip2_install/lib/:/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/:/home/comp/zmzhang/software/gsl-2.6_install/lib/:/home/comp/zmzhang/software/boost_1_73_0_install/lib/:/home/comp/zmzhang/software/sparsehash_install/lib/:/home/comp/zmzhang/software/zlib-1.2.11_install/lib/:/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/:/home/comp/zmzhang/software/htslib_install/lib/:/home/comp/zmzhang/software/deflate/lib/:./:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/lib/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c404e.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c404e.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_c404e
+        /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c404e.dir/link.txt --verbose=1
+        Reading specs from /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/specs
+        could not find specs file conda.specs
+        COLLECT_GCC=/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/c++
+        COLLECT_LTO_WRAPPER=/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.2.0/lto-wrapper
+        Target: x86_64-conda-linux-gnu
+        Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1740238128824/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1740238128824/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1740238128824/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1740238128824/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1740238128824/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1740238128824/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1740238128824/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++ --with-pkgversion='conda-forge gcc 14.2.0-2' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.2.0 (conda-forge gcc 14.2.0-2) 
+        COMPILER_PATH=/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.2.0/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../libexec/gcc/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/:/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib/:/home/comp/zmzhang/software/lib/../lib/:/home/comp/zmzhang/software/bzip2_install/lib/../lib/:/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib/:/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib/:/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib/:/home/comp/zmzhang/software/sparsehash_install/lib/../lib/:/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib/:/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib/:/home/comp/zmzhang/software/htslib_install/lib/../lib/:/home/comp/zmzhang/software/deflate/lib/../lib/:/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib/:/home/comp/zmzhang/software/lib/../lib/:/home/comp/zmzhang/software/bzip2_install/lib/../lib/:/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib/:/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib/:/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib/:/home/comp/zmzhang/software/sparsehash_install/lib/../lib/:/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib/:/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib/:/home/comp/zmzhang/software/htslib_install/lib/../lib/:/home/comp/zmzhang/software/deflate/lib/../lib/:/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib/:/home/comp/zmzhang/software/lib/../lib/:/home/comp/zmzhang/software/bzip2_install/lib/../lib/:/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib/:/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib/:/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib/:/home/comp/zmzhang/software/sparsehash_install/lib/../lib/:/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib/:/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib/:/home/comp/zmzhang/software/htslib_install/lib/../lib/:/home/comp/zmzhang/software/deflate/lib/../lib/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../lib/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/comp/zmzhang/software/expat-2.4.1_install/lib/:/home/comp/zmzhang/software/lib/:/home/comp/zmzhang/software/bzip2_install/lib/:/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/:/home/comp/zmzhang/software/gsl-2.6_install/lib/:/home/comp/zmzhang/software/boost_1_73_0_install/lib/:/home/comp/zmzhang/software/sparsehash_install/lib/:/home/comp/zmzhang/software/zlib-1.2.11_install/lib/:/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/:/home/comp/zmzhang/software/htslib_install/lib/:/home/comp/zmzhang/software/deflate/lib/:/home/comp/zmzhang/software/expat-2.4.1_install/lib/:/home/comp/zmzhang/software/lib/:/home/comp/zmzhang/software/bzip2_install/lib/:/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/:/home/comp/zmzhang/software/gsl-2.6_install/lib/:/home/comp/zmzhang/software/boost_1_73_0_install/lib/:/home/comp/zmzhang/software/sparsehash_install/lib/:/home/comp/zmzhang/software/zlib-1.2.11_install/lib/:/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/:/home/comp/zmzhang/software/htslib_install/lib/:/home/comp/zmzhang/software/deflate/lib/:/home/comp/zmzhang/software/expat-2.4.1_install/lib/:/home/comp/zmzhang/software/lib/:/home/comp/zmzhang/software/bzip2_install/lib/:/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/:/home/comp/zmzhang/software/gsl-2.6_install/lib/:/home/comp/zmzhang/software/boost_1_73_0_install/lib/:/home/comp/zmzhang/software/sparsehash_install/lib/:/home/comp/zmzhang/software/zlib-1.2.11_install/lib/:/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/:/home/comp/zmzhang/software/htslib_install/lib/:/home/comp/zmzhang/software/deflate/lib/:./:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/lib/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c404e' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_c404e.'
+         /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.2.0/collect2 -plugin /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.2.0/liblto_plugin.so -plugin-opt=/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccDIZ37E.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_c404e /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/crtbeginS.o -L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0 -L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc -L/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib -L/home/comp/zmzhang/software/lib/../lib -L/home/comp/zmzhang/software/bzip2_install/lib/../lib -L/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib -L/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib -L/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib -L/home/comp/zmzhang/software/sparsehash_install/lib/../lib -L/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib -L/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib -L/home/comp/zmzhang/software/htslib_install/lib/../lib -L/home/comp/zmzhang/software/deflate/lib/../lib -L/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib -L/home/comp/zmzhang/software/lib/../lib -L/home/comp/zmzhang/software/bzip2_install/lib/../lib -L/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib -L/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib -L/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib -L/home/comp/zmzhang/software/sparsehash_install/lib/../lib -L/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib -L/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib -L/home/comp/zmzhang/software/htslib_install/lib/../lib -L/home/comp/zmzhang/software/deflate/lib/../lib -L/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib -L/home/comp/zmzhang/software/lib/../lib -L/home/comp/zmzhang/software/bzip2_install/lib/../lib -L/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib -L/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib -L/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib -L/home/comp/zmzhang/software/sparsehash_install/lib/../lib -L/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib -L/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib -L/home/comp/zmzhang/software/htslib_install/lib/../lib -L/home/comp/zmzhang/software/deflate/lib/../lib -L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../lib -L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/home/comp/zmzhang/software/expat-2.4.1_install/lib -L/home/comp/zmzhang/software/lib -L/home/comp/zmzhang/software/bzip2_install/lib -L/home/comp/zmzhang/software/openmpi-4.1.1_install/lib -L/home/comp/zmzhang/software/gsl-2.6_install/lib -L/home/comp/zmzhang/software/boost_1_73_0_install/lib -L/home/comp/zmzhang/software/sparsehash_install/lib -L/home/comp/zmzhang/software/zlib-1.2.11_install/lib -L/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib -L/home/comp/zmzhang/software/htslib_install/lib -L/home/comp/zmzhang/software/deflate/lib -L/home/comp/zmzhang/software/expat-2.4.1_install/lib -L/home/comp/zmzhang/software/lib -L/home/comp/zmzhang/software/bzip2_install/lib -L/home/comp/zmzhang/software/openmpi-4.1.1_install/lib -L/home/comp/zmzhang/software/gsl-2.6_install/lib -L/home/comp/zmzhang/software/boost_1_73_0_install/lib -L/home/comp/zmzhang/software/sparsehash_install/lib -L/home/comp/zmzhang/software/zlib-1.2.11_install/lib -L/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib -L/home/comp/zmzhang/software/htslib_install/lib -L/home/comp/zmzhang/software/deflate/lib -L/home/comp/zmzhang/software/expat-2.4.1_install/lib -L/home/comp/zmzhang/software/lib -L/home/comp/zmzhang/software/bzip2_install/lib -L/home/comp/zmzhang/software/openmpi-4.1.1_install/lib -L/home/comp/zmzhang/software/gsl-2.6_install/lib -L/home/comp/zmzhang/software/boost_1_73_0_install/lib -L/home/comp/zmzhang/software/sparsehash_install/lib -L/home/comp/zmzhang/software/zlib-1.2.11_install/lib -L/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib -L/home/comp/zmzhang/software/htslib_install/lib -L/home/comp/zmzhang/software/deflate/lib -L. -L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/lib -L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../.. -L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib CMakeFiles/cmTC_c404e.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/crtendS.o /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /home/comp/zmzhang/software/anaconda3/envs/sclja/lib
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c404e' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_c404e.'
+        /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/c++  -v CMakeFiles/cmTC_c404e.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_c404e
+        gmake[1]: Leaving directory '/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/build/CMakeFiles/CMakeScratch/TryCompile-xTUx1M'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/comp/zmzhang/software/anaconda3/envs/sclja/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:191 (message)"
+      - "/home/comp/zmzhang/software/anaconda3/envs/sclja/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/comp/zmzhang/software/expat-2.4.1_install/include]
+          add: [/home/comp/zmzhang/software/bzip2_install/include]
+          add: [/home/comp/zmzhang/software/openmpi-4.1.1_install/include]
+          add: [/home/comp/zmzhang/software/gsl-2.6_install/include]
+          add: [/home/comp/zmzhang/software/boost_1_73_0_install/include]
+          add: [/home/comp/zmzhang/software/sparsehash_install/include]
+          add: [/home/comp/zmzhang/software/zlib-1.2.11_install/include]
+          add: [/home/comp/zmzhang/software/arpack-ng-3.8.0_install/include]
+          add: [/home/comp/zmzhang/software/htslib_install/include]
+          add: [/home/comp/zmzhang/software/deflate/include]
+          add: [.]
+          add: [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++]
+          add: [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++/x86_64-conda-linux-gnu]
+          add: [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++/backward]
+          add: [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/include]
+          add: [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/include-fixed]
+          add: [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+        end of search list found
+        collapse include dir [/home/comp/zmzhang/software/expat-2.4.1_install/include] ==> [/home/comp/zmzhang/software/expat-2.4.1_install/include]
+        collapse include dir [/home/comp/zmzhang/software/bzip2_install/include] ==> [/home/comp/zmzhang/software/bzip2_install/include]
+        collapse include dir [/home/comp/zmzhang/software/openmpi-4.1.1_install/include] ==> [/home/comp/zmzhang/software/openmpi-4.1.1_install/include]
+        collapse include dir [/home/comp/zmzhang/software/gsl-2.6_install/include] ==> [/home/comp/zmzhang/software/gsl-2.6_install/include]
+        collapse include dir [/home/comp/zmzhang/software/boost_1_73_0_install/include] ==> [/home/comp/zmzhang/software/boost_1_73_0_install/include]
+        collapse include dir [/home/comp/zmzhang/software/sparsehash_install/include] ==> [/home/comp/zmzhang/software/sparsehash_install/include]
+        collapse include dir [/home/comp/zmzhang/software/zlib-1.2.11_install/include] ==> [/home/comp/zmzhang/software/zlib-1.2.11_install/include]
+        collapse include dir [/home/comp/zmzhang/software/arpack-ng-3.8.0_install/include] ==> [/home/comp/zmzhang/software/arpack-ng-3.8.0_install/include]
+        collapse include dir [/home/comp/zmzhang/software/htslib_install/include] ==> [/home/comp/zmzhang/software/htslib_install/include]
+        collapse include dir [/home/comp/zmzhang/software/deflate/include] ==> [/home/comp/zmzhang/software/deflate/include]
+        skipping relative include dir [.]
+        collapse include dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++] ==> [/home/comp/zmzhang/software/anaconda3/envs/sclja/lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++]
+        collapse include dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++/x86_64-conda-linux-gnu] ==> [/home/comp/zmzhang/software/anaconda3/envs/sclja/lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++/x86_64-conda-linux-gnu]
+        collapse include dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++/backward] ==> [/home/comp/zmzhang/software/anaconda3/envs/sclja/lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++/backward]
+        collapse include dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/include] ==> [/home/comp/zmzhang/software/anaconda3/envs/sclja/lib/gcc/x86_64-conda-linux-gnu/14.2.0/include]
+        collapse include dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/include-fixed] ==> [/home/comp/zmzhang/software/anaconda3/envs/sclja/lib/gcc/x86_64-conda-linux-gnu/14.2.0/include-fixed]
+        collapse include dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/include] ==> [/home/comp/zmzhang/software/anaconda3/envs/sclja/x86_64-conda-linux-gnu/sysroot/usr/include]
+        implicit include dirs: [/home/comp/zmzhang/software/expat-2.4.1_install/include;/home/comp/zmzhang/software/bzip2_install/include;/home/comp/zmzhang/software/openmpi-4.1.1_install/include;/home/comp/zmzhang/software/gsl-2.6_install/include;/home/comp/zmzhang/software/boost_1_73_0_install/include;/home/comp/zmzhang/software/sparsehash_install/include;/home/comp/zmzhang/software/zlib-1.2.11_install/include;/home/comp/zmzhang/software/arpack-ng-3.8.0_install/include;/home/comp/zmzhang/software/htslib_install/include;/home/comp/zmzhang/software/deflate/include;/home/comp/zmzhang/software/anaconda3/envs/sclja/lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++;/home/comp/zmzhang/software/anaconda3/envs/sclja/lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++/x86_64-conda-linux-gnu;/home/comp/zmzhang/software/anaconda3/envs/sclja/lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++/backward;/home/comp/zmzhang/software/anaconda3/envs/sclja/lib/gcc/x86_64-conda-linux-gnu/14.2.0/include;/home/comp/zmzhang/software/anaconda3/envs/sclja/lib/gcc/x86_64-conda-linux-gnu/14.2.0/include-fixed;/home/comp/zmzhang/software/anaconda3/envs/sclja/x86_64-conda-linux-gnu/sysroot/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/comp/zmzhang/software/anaconda3/envs/sclja/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:227 (message)"
+      - "/home/comp/zmzhang/software/anaconda3/envs/sclja/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/build/CMakeFiles/CMakeScratch/TryCompile-xTUx1M']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c404e/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_c404e.dir/build.make CMakeFiles/cmTC_c404e.dir/build]
+        ignore line: [gmake[1]: Entering directory '/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/build/CMakeFiles/CMakeScratch/TryCompile-xTUx1M']
+        ignore line: [Building CXX object CMakeFiles/cmTC_c404e.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/c++   -v -o CMakeFiles/cmTC_c404e.dir/CMakeCXXCompilerABI.cpp.obj -c /home/comp/zmzhang/software/anaconda3/envs/sclja/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Reading specs from /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/specs]
+        ignore line: [could not find specs file conda.specs]
+        ignore line: [COLLECT_GCC=/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/c++]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1740238128824/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1740238128824/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1740238128824/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1740238128824/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1740238128824/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1740238128824/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1740238128824/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++ --with-pkgversion='conda-forge gcc 14.2.0-2' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.2.0 (conda-forge gcc 14.2.0-2) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c404e.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c404e.dir/']
+        ignore line: [ /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.2.0/cc1plus -quiet -v -iprefix /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/ -isysroot /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot -D_GNU_SOURCE /home/comp/zmzhang/software/anaconda3/envs/sclja/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_c404e.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/cch5K4cS.s]
+        ignore line: [GNU C++17 (conda-forge gcc 14.2.0-2) version 14.2.0 (x86_64-conda-linux-gnu)]
+        ignore line: [	compiled by GNU C version 14.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/home/comp/zmzhang/Synteny/edlib-1.2.7/edlib/include"]
+        ignore line: [ignoring duplicate directory "/home/comp/zmzhang/software/deflate/include"]
+        ignore line: [ignoring nonexistent directory "/home/comp/zmzhang/Synteny/edlib-1.2.7/edlib/include"]
+        ignore line: [ignoring duplicate directory "/home/comp/zmzhang/software/expat-2.4.1_install/include"]
+        ignore line: [ignoring duplicate directory "/home/comp/zmzhang/software/bzip2_install/include"]
+        ignore line: [ignoring duplicate directory "/home/comp/zmzhang/software/openmpi-4.1.1_install/include"]
+        ignore line: [ignoring duplicate directory "/home/comp/zmzhang/software/gsl-2.6_install/include"]
+        ignore line: [ignoring duplicate directory "/home/comp/zmzhang/software/boost_1_73_0_install/include"]
+        ignore line: [ignoring duplicate directory "/home/comp/zmzhang/software/sparsehash_install/include"]
+        ignore line: [ignoring duplicate directory "/home/comp/zmzhang/software/zlib-1.2.11_install/include"]
+        ignore line: [ignoring duplicate directory "/home/comp/zmzhang/software/arpack-ng-3.8.0_install/include"]
+        ignore line: [ignoring duplicate directory "/home/comp/zmzhang/software/htslib_install/include"]
+        ignore line: [ignoring duplicate directory "/home/comp/zmzhang/software/deflate/include"]
+        ignore line: [ignoring nonexistent directory "/home/comp/zmzhang/Synteny/edlib-1.2.7/edlib/include"]
+        ignore line: [ignoring duplicate directory "/home/comp/zmzhang/software/expat-2.4.1_install/include"]
+        ignore line: [ignoring duplicate directory "/home/comp/zmzhang/software/bzip2_install/include"]
+        ignore line: [ignoring duplicate directory "/home/comp/zmzhang/software/openmpi-4.1.1_install/include"]
+        ignore line: [ignoring duplicate directory "/home/comp/zmzhang/software/gsl-2.6_install/include"]
+        ignore line: [ignoring duplicate directory "/home/comp/zmzhang/software/boost_1_73_0_install/include"]
+        ignore line: [ignoring duplicate directory "/home/comp/zmzhang/software/sparsehash_install/include"]
+        ignore line: [ignoring duplicate directory "/home/comp/zmzhang/software/zlib-1.2.11_install/include"]
+        ignore line: [ignoring duplicate directory "/home/comp/zmzhang/software/arpack-ng-3.8.0_install/include"]
+        ignore line: [ignoring duplicate directory "/home/comp/zmzhang/software/htslib_install/include"]
+        ignore line: [ignoring duplicate directory "/home/comp/zmzhang/software/deflate/include"]
+        ignore line: [ignoring nonexistent directory "/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++"]
+        ignore line: [ignoring duplicate directory "/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++/x86_64-conda-linux-gnu"]
+        ignore line: [ignoring duplicate directory "/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++/backward"]
+        ignore line: [ignoring duplicate directory "/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.2.0/include"]
+        ignore line: [ignoring nonexistent directory "/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.2.0/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/comp/zmzhang/software/expat-2.4.1_install/include]
+        ignore line: [ /home/comp/zmzhang/software/bzip2_install/include]
+        ignore line: [ /home/comp/zmzhang/software/openmpi-4.1.1_install/include]
+        ignore line: [ /home/comp/zmzhang/software/gsl-2.6_install/include]
+        ignore line: [ /home/comp/zmzhang/software/boost_1_73_0_install/include]
+        ignore line: [ /home/comp/zmzhang/software/sparsehash_install/include]
+        ignore line: [ /home/comp/zmzhang/software/zlib-1.2.11_install/include]
+        ignore line: [ /home/comp/zmzhang/software/arpack-ng-3.8.0_install/include]
+        ignore line: [ /home/comp/zmzhang/software/htslib_install/include]
+        ignore line: [ /home/comp/zmzhang/software/deflate/include]
+        ignore line: [ .]
+        ignore line: [ /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++]
+        ignore line: [ /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++/x86_64-conda-linux-gnu]
+        ignore line: [ /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++/backward]
+        ignore line: [ /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/include]
+        ignore line: [ /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/include-fixed]
+        ignore line: [ /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 471cb6a3a6e905902e47e89d6a5c33f7]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c404e.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c404e.dir/']
+        ignore line: [ /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_c404e.dir/CMakeCXXCompilerABI.cpp.obj /tmp/cch5K4cS.s]
+        ignore line: [GNU assembler version 2.43 (x86_64-conda-linux-gnu) using BFD version (GNU Binutils) 2.43]
+        ignore line: [COMPILER_PATH=/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.2.0/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../libexec/gcc/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/:/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib/:/home/comp/zmzhang/software/lib/../lib/:/home/comp/zmzhang/software/bzip2_install/lib/../lib/:/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib/:/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib/:/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib/:/home/comp/zmzhang/software/sparsehash_install/lib/../lib/:/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib/:/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib/:/home/comp/zmzhang/software/htslib_install/lib/../lib/:/home/comp/zmzhang/software/deflate/lib/../lib/:/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib/:/home/comp/zmzhang/software/lib/../lib/:/home/comp/zmzhang/software/bzip2_install/lib/../lib/:/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib/:/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib/:/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib/:/home/comp/zmzhang/software/sparsehash_install/lib/../lib/:/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib/:/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib/:/home/comp/zmzhang/software/htslib_install/lib/../lib/:/home/comp/zmzhang/software/deflate/lib/../lib/:/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib/:/home/comp/zmzhang/software/lib/../lib/:/home/comp/zmzhang/software/bzip2_install/lib/../lib/:/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib/:/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib/:/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib/:/home/comp/zmzhang/software/sparsehash_install/lib/../lib/:/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib/:/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib/:/home/comp/zmzhang/software/htslib_install/lib/../lib/:/home/comp/zmzhang/software/deflate/lib/../lib/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../lib/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/comp/zmzhang/software/expat-2.4.1_install/lib/:/home/comp/zmzhang/software/lib/:/home/comp/zmzhang/software/bzip2_install/lib/:/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/:/home/comp/zmzhang/software/gsl-2.6_install/lib/:/home/comp/zmzhang/software/boost_1_73_0_install/lib/:/home/comp/zmzhang/software/sparsehash_install/lib/:/home/comp/zmzhang/software/zlib-1.2.11_install/lib/:/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/:/home/comp/zmzhang/software/htslib_install/lib/:/home/comp/zmzhang/software/deflate/lib/:/home/comp/zmzhang/software/expat-2.4.1_install/lib/:/home/comp/zmzhang/software/lib/:/home/comp/zmzhang/software/bzip2_install/lib/:/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/:/home/comp/zmzhang/software/gsl-2.6_install/lib/:/home/comp/zmzhang/software/boost_1_73_0_install/lib/:/home/comp/zmzhang/software/sparsehash_install/lib/:/home/comp/zmzhang/software/zlib-1.2.11_install/lib/:/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/:/home/comp/zmzhang/software/htslib_install/lib/:/home/comp/zmzhang/software/deflate/lib/:/home/comp/zmzhang/software/expat-2.4.1_install/lib/:/home/comp/zmzhang/software/lib/:/home/comp/zmzhang/software/bzip2_install/lib/:/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/:/home/comp/zmzhang/software/gsl-2.6_install/lib/:/home/comp/zmzhang/software/boost_1_73_0_install/lib/:/home/comp/zmzhang/software/sparsehash_install/lib/:/home/comp/zmzhang/software/zlib-1.2.11_install/lib/:/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/:/home/comp/zmzhang/software/htslib_install/lib/:/home/comp/zmzhang/software/deflate/lib/:./:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/lib/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c404e.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c404e.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_c404e]
+        ignore line: [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c404e.dir/link.txt --verbose=1]
+        ignore line: [Reading specs from /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/specs]
+        ignore line: [could not find specs file conda.specs]
+        ignore line: [COLLECT_GCC=/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.2.0/lto-wrapper]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1740238128824/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1740238128824/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1740238128824/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1740238128824/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1740238128824/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1740238128824/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1740238128824/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++ --with-pkgversion='conda-forge gcc 14.2.0-2' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.2.0 (conda-forge gcc 14.2.0-2) ]
+        ignore line: [COMPILER_PATH=/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.2.0/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../libexec/gcc/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/:/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib/:/home/comp/zmzhang/software/lib/../lib/:/home/comp/zmzhang/software/bzip2_install/lib/../lib/:/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib/:/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib/:/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib/:/home/comp/zmzhang/software/sparsehash_install/lib/../lib/:/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib/:/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib/:/home/comp/zmzhang/software/htslib_install/lib/../lib/:/home/comp/zmzhang/software/deflate/lib/../lib/:/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib/:/home/comp/zmzhang/software/lib/../lib/:/home/comp/zmzhang/software/bzip2_install/lib/../lib/:/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib/:/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib/:/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib/:/home/comp/zmzhang/software/sparsehash_install/lib/../lib/:/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib/:/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib/:/home/comp/zmzhang/software/htslib_install/lib/../lib/:/home/comp/zmzhang/software/deflate/lib/../lib/:/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib/:/home/comp/zmzhang/software/lib/../lib/:/home/comp/zmzhang/software/bzip2_install/lib/../lib/:/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib/:/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib/:/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib/:/home/comp/zmzhang/software/sparsehash_install/lib/../lib/:/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib/:/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib/:/home/comp/zmzhang/software/htslib_install/lib/../lib/:/home/comp/zmzhang/software/deflate/lib/../lib/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../lib/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/comp/zmzhang/software/expat-2.4.1_install/lib/:/home/comp/zmzhang/software/lib/:/home/comp/zmzhang/software/bzip2_install/lib/:/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/:/home/comp/zmzhang/software/gsl-2.6_install/lib/:/home/comp/zmzhang/software/boost_1_73_0_install/lib/:/home/comp/zmzhang/software/sparsehash_install/lib/:/home/comp/zmzhang/software/zlib-1.2.11_install/lib/:/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/:/home/comp/zmzhang/software/htslib_install/lib/:/home/comp/zmzhang/software/deflate/lib/:/home/comp/zmzhang/software/expat-2.4.1_install/lib/:/home/comp/zmzhang/software/lib/:/home/comp/zmzhang/software/bzip2_install/lib/:/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/:/home/comp/zmzhang/software/gsl-2.6_install/lib/:/home/comp/zmzhang/software/boost_1_73_0_install/lib/:/home/comp/zmzhang/software/sparsehash_install/lib/:/home/comp/zmzhang/software/zlib-1.2.11_install/lib/:/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/:/home/comp/zmzhang/software/htslib_install/lib/:/home/comp/zmzhang/software/deflate/lib/:/home/comp/zmzhang/software/expat-2.4.1_install/lib/:/home/comp/zmzhang/software/lib/:/home/comp/zmzhang/software/bzip2_install/lib/:/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/:/home/comp/zmzhang/software/gsl-2.6_install/lib/:/home/comp/zmzhang/software/boost_1_73_0_install/lib/:/home/comp/zmzhang/software/sparsehash_install/lib/:/home/comp/zmzhang/software/zlib-1.2.11_install/lib/:/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/:/home/comp/zmzhang/software/htslib_install/lib/:/home/comp/zmzhang/software/deflate/lib/:./:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/lib/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c404e' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_c404e.']
+        link line: [ /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.2.0/collect2 -plugin /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.2.0/liblto_plugin.so -plugin-opt=/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccDIZ37E.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_c404e /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/crtbeginS.o -L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0 -L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc -L/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib -L/home/comp/zmzhang/software/lib/../lib -L/home/comp/zmzhang/software/bzip2_install/lib/../lib -L/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib -L/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib -L/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib -L/home/comp/zmzhang/software/sparsehash_install/lib/../lib -L/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib -L/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib -L/home/comp/zmzhang/software/htslib_install/lib/../lib -L/home/comp/zmzhang/software/deflate/lib/../lib -L/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib -L/home/comp/zmzhang/software/lib/../lib -L/home/comp/zmzhang/software/bzip2_install/lib/../lib -L/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib -L/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib -L/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib -L/home/comp/zmzhang/software/sparsehash_install/lib/../lib -L/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib -L/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib -L/home/comp/zmzhang/software/htslib_install/lib/../lib -L/home/comp/zmzhang/software/deflate/lib/../lib -L/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib -L/home/comp/zmzhang/software/lib/../lib -L/home/comp/zmzhang/software/bzip2_install/lib/../lib -L/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib -L/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib -L/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib -L/home/comp/zmzhang/software/sparsehash_install/lib/../lib -L/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib -L/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib -L/home/comp/zmzhang/software/htslib_install/lib/../lib -L/home/comp/zmzhang/software/deflate/lib/../lib -L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../lib -L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/home/comp/zmzhang/software/expat-2.4.1_install/lib -L/home/comp/zmzhang/software/lib -L/home/comp/zmzhang/software/bzip2_install/lib -L/home/comp/zmzhang/software/openmpi-4.1.1_install/lib -L/home/comp/zmzhang/software/gsl-2.6_install/lib -L/home/comp/zmzhang/software/boost_1_73_0_install/lib -L/home/comp/zmzhang/software/sparsehash_install/lib -L/home/comp/zmzhang/software/zlib-1.2.11_install/lib -L/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib -L/home/comp/zmzhang/software/htslib_install/lib -L/home/comp/zmzhang/software/deflate/lib -L/home/comp/zmzhang/software/expat-2.4.1_install/lib -L/home/comp/zmzhang/software/lib -L/home/comp/zmzhang/software/bzip2_install/lib -L/home/comp/zmzhang/software/openmpi-4.1.1_install/lib -L/home/comp/zmzhang/software/gsl-2.6_install/lib -L/home/comp/zmzhang/software/boost_1_73_0_install/lib -L/home/comp/zmzhang/software/sparsehash_install/lib -L/home/comp/zmzhang/software/zlib-1.2.11_install/lib -L/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib -L/home/comp/zmzhang/software/htslib_install/lib -L/home/comp/zmzhang/software/deflate/lib -L/home/comp/zmzhang/software/expat-2.4.1_install/lib -L/home/comp/zmzhang/software/lib -L/home/comp/zmzhang/software/bzip2_install/lib -L/home/comp/zmzhang/software/openmpi-4.1.1_install/lib -L/home/comp/zmzhang/software/gsl-2.6_install/lib -L/home/comp/zmzhang/software/boost_1_73_0_install/lib -L/home/comp/zmzhang/software/sparsehash_install/lib -L/home/comp/zmzhang/software/zlib-1.2.11_install/lib -L/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib -L/home/comp/zmzhang/software/htslib_install/lib -L/home/comp/zmzhang/software/deflate/lib -L. -L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/lib -L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../.. -L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib CMakeFiles/cmTC_c404e.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/crtendS.o /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /home/comp/zmzhang/software/anaconda3/envs/sclja/lib]
+          arg [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.2.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.2.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.2.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccDIZ37E.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--sysroot=/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_c404e] ==> ignore
+          arg [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o] ==> obj [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o]
+          arg [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o] ==> obj [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o]
+          arg [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/crtbeginS.o] ==> obj [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/crtbeginS.o]
+          arg [-L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0] ==> dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0]
+          arg [-L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc] ==> dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc]
+          arg [-L/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/lib/../lib] ==> dir [/home/comp/zmzhang/software/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/bzip2_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/bzip2_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/sparsehash_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/sparsehash_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/htslib_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/htslib_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/deflate/lib/../lib] ==> dir [/home/comp/zmzhang/software/deflate/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/lib/../lib] ==> dir [/home/comp/zmzhang/software/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/bzip2_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/bzip2_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/sparsehash_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/sparsehash_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/htslib_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/htslib_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/deflate/lib/../lib] ==> dir [/home/comp/zmzhang/software/deflate/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/lib/../lib] ==> dir [/home/comp/zmzhang/software/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/bzip2_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/bzip2_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/sparsehash_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/sparsehash_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/htslib_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/htslib_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/deflate/lib/../lib] ==> dir [/home/comp/zmzhang/software/deflate/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../lib] ==> dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../lib]
+          arg [-L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/expat-2.4.1_install/lib] ==> dir [/home/comp/zmzhang/software/expat-2.4.1_install/lib]
+          arg [-L/home/comp/zmzhang/software/lib] ==> dir [/home/comp/zmzhang/software/lib]
+          arg [-L/home/comp/zmzhang/software/bzip2_install/lib] ==> dir [/home/comp/zmzhang/software/bzip2_install/lib]
+          arg [-L/home/comp/zmzhang/software/openmpi-4.1.1_install/lib] ==> dir [/home/comp/zmzhang/software/openmpi-4.1.1_install/lib]
+          arg [-L/home/comp/zmzhang/software/gsl-2.6_install/lib] ==> dir [/home/comp/zmzhang/software/gsl-2.6_install/lib]
+          arg [-L/home/comp/zmzhang/software/boost_1_73_0_install/lib] ==> dir [/home/comp/zmzhang/software/boost_1_73_0_install/lib]
+          arg [-L/home/comp/zmzhang/software/sparsehash_install/lib] ==> dir [/home/comp/zmzhang/software/sparsehash_install/lib]
+          arg [-L/home/comp/zmzhang/software/zlib-1.2.11_install/lib] ==> dir [/home/comp/zmzhang/software/zlib-1.2.11_install/lib]
+          arg [-L/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib] ==> dir [/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib]
+          arg [-L/home/comp/zmzhang/software/htslib_install/lib] ==> dir [/home/comp/zmzhang/software/htslib_install/lib]
+          arg [-L/home/comp/zmzhang/software/deflate/lib] ==> dir [/home/comp/zmzhang/software/deflate/lib]
+          arg [-L/home/comp/zmzhang/software/expat-2.4.1_install/lib] ==> dir [/home/comp/zmzhang/software/expat-2.4.1_install/lib]
+          arg [-L/home/comp/zmzhang/software/lib] ==> dir [/home/comp/zmzhang/software/lib]
+          arg [-L/home/comp/zmzhang/software/bzip2_install/lib] ==> dir [/home/comp/zmzhang/software/bzip2_install/lib]
+          arg [-L/home/comp/zmzhang/software/openmpi-4.1.1_install/lib] ==> dir [/home/comp/zmzhang/software/openmpi-4.1.1_install/lib]
+          arg [-L/home/comp/zmzhang/software/gsl-2.6_install/lib] ==> dir [/home/comp/zmzhang/software/gsl-2.6_install/lib]
+          arg [-L/home/comp/zmzhang/software/boost_1_73_0_install/lib] ==> dir [/home/comp/zmzhang/software/boost_1_73_0_install/lib]
+          arg [-L/home/comp/zmzhang/software/sparsehash_install/lib] ==> dir [/home/comp/zmzhang/software/sparsehash_install/lib]
+          arg [-L/home/comp/zmzhang/software/zlib-1.2.11_install/lib] ==> dir [/home/comp/zmzhang/software/zlib-1.2.11_install/lib]
+          arg [-L/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib] ==> dir [/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib]
+          arg [-L/home/comp/zmzhang/software/htslib_install/lib] ==> dir [/home/comp/zmzhang/software/htslib_install/lib]
+          arg [-L/home/comp/zmzhang/software/deflate/lib] ==> dir [/home/comp/zmzhang/software/deflate/lib]
+          arg [-L/home/comp/zmzhang/software/expat-2.4.1_install/lib] ==> dir [/home/comp/zmzhang/software/expat-2.4.1_install/lib]
+          arg [-L/home/comp/zmzhang/software/lib] ==> dir [/home/comp/zmzhang/software/lib]
+          arg [-L/home/comp/zmzhang/software/bzip2_install/lib] ==> dir [/home/comp/zmzhang/software/bzip2_install/lib]
+          arg [-L/home/comp/zmzhang/software/openmpi-4.1.1_install/lib] ==> dir [/home/comp/zmzhang/software/openmpi-4.1.1_install/lib]
+          arg [-L/home/comp/zmzhang/software/gsl-2.6_install/lib] ==> dir [/home/comp/zmzhang/software/gsl-2.6_install/lib]
+          arg [-L/home/comp/zmzhang/software/boost_1_73_0_install/lib] ==> dir [/home/comp/zmzhang/software/boost_1_73_0_install/lib]
+          arg [-L/home/comp/zmzhang/software/sparsehash_install/lib] ==> dir [/home/comp/zmzhang/software/sparsehash_install/lib]
+          arg [-L/home/comp/zmzhang/software/zlib-1.2.11_install/lib] ==> dir [/home/comp/zmzhang/software/zlib-1.2.11_install/lib]
+          arg [-L/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib] ==> dir [/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib]
+          arg [-L/home/comp/zmzhang/software/htslib_install/lib] ==> dir [/home/comp/zmzhang/software/htslib_install/lib]
+          arg [-L/home/comp/zmzhang/software/deflate/lib] ==> dir [/home/comp/zmzhang/software/deflate/lib]
+          arg [-L.] ==> ignore
+          arg [-L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/lib] ==> dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/lib]
+          arg [-L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../..] ==> dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../..]
+          arg [-L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/lib]
+          arg [-L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib]
+          arg [CMakeFiles/cmTC_c404e.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/crtendS.o] ==> obj [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/crtendS.o]
+          arg [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o] ==> obj [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o]
+          arg [-rpath] ==> ignore
+          arg [/home/comp/zmzhang/software/anaconda3/envs/sclja/lib] ==> ignore
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c404e' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_c404e.']
+        ignore line: [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/c++  -v CMakeFiles/cmTC_c404e.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_c404e]
+        ignore line: [gmake[1]: Leaving directory '/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/build/CMakeFiles/CMakeScratch/TryCompile-xTUx1M']
+        ignore line: []
+        ignore line: []
+        collapse obj [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o] ==> [/home/comp/zmzhang/software/anaconda3/envs/sclja/x86_64-conda-linux-gnu/sysroot/usr/lib/Scrt1.o]
+        collapse obj [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o] ==> [/home/comp/zmzhang/software/anaconda3/envs/sclja/x86_64-conda-linux-gnu/sysroot/usr/lib/crti.o]
+        collapse obj [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/crtbeginS.o] ==> [/home/comp/zmzhang/software/anaconda3/envs/sclja/lib/gcc/x86_64-conda-linux-gnu/14.2.0/crtbeginS.o]
+        collapse obj [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/crtendS.o] ==> [/home/comp/zmzhang/software/anaconda3/envs/sclja/lib/gcc/x86_64-conda-linux-gnu/14.2.0/crtendS.o]
+        collapse obj [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o] ==> [/home/comp/zmzhang/software/anaconda3/envs/sclja/x86_64-conda-linux-gnu/sysroot/usr/lib/crtn.o]
+        collapse library dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0] ==> [/home/comp/zmzhang/software/anaconda3/envs/sclja/lib/gcc/x86_64-conda-linux-gnu/14.2.0]
+        collapse library dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc] ==> [/home/comp/zmzhang/software/anaconda3/envs/sclja/lib/gcc]
+        collapse library dir [/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib] ==> [/home/comp/zmzhang/software/expat-2.4.1_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/lib/../lib] ==> [/home/comp/zmzhang/software/lib]
+        collapse library dir [/home/comp/zmzhang/software/bzip2_install/lib/../lib] ==> [/home/comp/zmzhang/software/bzip2_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib] ==> [/home/comp/zmzhang/software/openmpi-4.1.1_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib] ==> [/home/comp/zmzhang/software/gsl-2.6_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib] ==> [/home/comp/zmzhang/software/boost_1_73_0_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/sparsehash_install/lib/../lib] ==> [/home/comp/zmzhang/software/sparsehash_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib] ==> [/home/comp/zmzhang/software/zlib-1.2.11_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib] ==> [/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/htslib_install/lib/../lib] ==> [/home/comp/zmzhang/software/htslib_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/deflate/lib/../lib] ==> [/home/comp/zmzhang/software/deflate/lib]
+        collapse library dir [/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib] ==> [/home/comp/zmzhang/software/expat-2.4.1_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/lib/../lib] ==> [/home/comp/zmzhang/software/lib]
+        collapse library dir [/home/comp/zmzhang/software/bzip2_install/lib/../lib] ==> [/home/comp/zmzhang/software/bzip2_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib] ==> [/home/comp/zmzhang/software/openmpi-4.1.1_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib] ==> [/home/comp/zmzhang/software/gsl-2.6_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib] ==> [/home/comp/zmzhang/software/boost_1_73_0_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/sparsehash_install/lib/../lib] ==> [/home/comp/zmzhang/software/sparsehash_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib] ==> [/home/comp/zmzhang/software/zlib-1.2.11_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib] ==> [/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/htslib_install/lib/../lib] ==> [/home/comp/zmzhang/software/htslib_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/deflate/lib/../lib] ==> [/home/comp/zmzhang/software/deflate/lib]
+        collapse library dir [/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib] ==> [/home/comp/zmzhang/software/expat-2.4.1_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/lib/../lib] ==> [/home/comp/zmzhang/software/lib]
+        collapse library dir [/home/comp/zmzhang/software/bzip2_install/lib/../lib] ==> [/home/comp/zmzhang/software/bzip2_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib] ==> [/home/comp/zmzhang/software/openmpi-4.1.1_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib] ==> [/home/comp/zmzhang/software/gsl-2.6_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib] ==> [/home/comp/zmzhang/software/boost_1_73_0_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/sparsehash_install/lib/../lib] ==> [/home/comp/zmzhang/software/sparsehash_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib] ==> [/home/comp/zmzhang/software/zlib-1.2.11_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib] ==> [/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/htslib_install/lib/../lib] ==> [/home/comp/zmzhang/software/htslib_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/deflate/lib/../lib] ==> [/home/comp/zmzhang/software/deflate/lib]
+        collapse library dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> [/home/comp/zmzhang/software/anaconda3/envs/sclja/x86_64-conda-linux-gnu/lib]
+        collapse library dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../lib] ==> [/home/comp/zmzhang/software/anaconda3/envs/sclja/lib]
+        collapse library dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> [/home/comp/zmzhang/software/anaconda3/envs/sclja/x86_64-conda-linux-gnu/sysroot/lib]
+        collapse library dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> [/home/comp/zmzhang/software/anaconda3/envs/sclja/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        collapse library dir [/home/comp/zmzhang/software/expat-2.4.1_install/lib] ==> [/home/comp/zmzhang/software/expat-2.4.1_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/lib] ==> [/home/comp/zmzhang/software/lib]
+        collapse library dir [/home/comp/zmzhang/software/bzip2_install/lib] ==> [/home/comp/zmzhang/software/bzip2_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/openmpi-4.1.1_install/lib] ==> [/home/comp/zmzhang/software/openmpi-4.1.1_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/gsl-2.6_install/lib] ==> [/home/comp/zmzhang/software/gsl-2.6_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/boost_1_73_0_install/lib] ==> [/home/comp/zmzhang/software/boost_1_73_0_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/sparsehash_install/lib] ==> [/home/comp/zmzhang/software/sparsehash_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/zlib-1.2.11_install/lib] ==> [/home/comp/zmzhang/software/zlib-1.2.11_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib] ==> [/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/htslib_install/lib] ==> [/home/comp/zmzhang/software/htslib_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/deflate/lib] ==> [/home/comp/zmzhang/software/deflate/lib]
+        collapse library dir [/home/comp/zmzhang/software/expat-2.4.1_install/lib] ==> [/home/comp/zmzhang/software/expat-2.4.1_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/lib] ==> [/home/comp/zmzhang/software/lib]
+        collapse library dir [/home/comp/zmzhang/software/bzip2_install/lib] ==> [/home/comp/zmzhang/software/bzip2_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/openmpi-4.1.1_install/lib] ==> [/home/comp/zmzhang/software/openmpi-4.1.1_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/gsl-2.6_install/lib] ==> [/home/comp/zmzhang/software/gsl-2.6_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/boost_1_73_0_install/lib] ==> [/home/comp/zmzhang/software/boost_1_73_0_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/sparsehash_install/lib] ==> [/home/comp/zmzhang/software/sparsehash_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/zlib-1.2.11_install/lib] ==> [/home/comp/zmzhang/software/zlib-1.2.11_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib] ==> [/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/htslib_install/lib] ==> [/home/comp/zmzhang/software/htslib_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/deflate/lib] ==> [/home/comp/zmzhang/software/deflate/lib]
+        collapse library dir [/home/comp/zmzhang/software/expat-2.4.1_install/lib] ==> [/home/comp/zmzhang/software/expat-2.4.1_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/lib] ==> [/home/comp/zmzhang/software/lib]
+        collapse library dir [/home/comp/zmzhang/software/bzip2_install/lib] ==> [/home/comp/zmzhang/software/bzip2_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/openmpi-4.1.1_install/lib] ==> [/home/comp/zmzhang/software/openmpi-4.1.1_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/gsl-2.6_install/lib] ==> [/home/comp/zmzhang/software/gsl-2.6_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/boost_1_73_0_install/lib] ==> [/home/comp/zmzhang/software/boost_1_73_0_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/sparsehash_install/lib] ==> [/home/comp/zmzhang/software/sparsehash_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/zlib-1.2.11_install/lib] ==> [/home/comp/zmzhang/software/zlib-1.2.11_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib] ==> [/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/htslib_install/lib] ==> [/home/comp/zmzhang/software/htslib_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/deflate/lib] ==> [/home/comp/zmzhang/software/deflate/lib]
+        collapse library dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/lib] ==> [/home/comp/zmzhang/software/anaconda3/envs/sclja/x86_64-conda-linux-gnu/lib]
+        collapse library dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../..] ==> [/home/comp/zmzhang/software/anaconda3/envs/sclja/lib]
+        collapse library dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> [/home/comp/zmzhang/software/anaconda3/envs/sclja/x86_64-conda-linux-gnu/sysroot/lib]
+        collapse library dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> [/home/comp/zmzhang/software/anaconda3/envs/sclja/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/home/comp/zmzhang/software/anaconda3/envs/sclja/x86_64-conda-linux-gnu/sysroot/usr/lib/Scrt1.o;/home/comp/zmzhang/software/anaconda3/envs/sclja/x86_64-conda-linux-gnu/sysroot/usr/lib/crti.o;/home/comp/zmzhang/software/anaconda3/envs/sclja/lib/gcc/x86_64-conda-linux-gnu/14.2.0/crtbeginS.o;/home/comp/zmzhang/software/anaconda3/envs/sclja/lib/gcc/x86_64-conda-linux-gnu/14.2.0/crtendS.o;/home/comp/zmzhang/software/anaconda3/envs/sclja/x86_64-conda-linux-gnu/sysroot/usr/lib/crtn.o]
+        implicit dirs: [/home/comp/zmzhang/software/anaconda3/envs/sclja/lib/gcc/x86_64-conda-linux-gnu/14.2.0;/home/comp/zmzhang/software/anaconda3/envs/sclja/lib/gcc;/home/comp/zmzhang/software/expat-2.4.1_install/lib;/home/comp/zmzhang/software/lib;/home/comp/zmzhang/software/bzip2_install/lib;/home/comp/zmzhang/software/openmpi-4.1.1_install/lib;/home/comp/zmzhang/software/gsl-2.6_install/lib;/home/comp/zmzhang/software/boost_1_73_0_install/lib;/home/comp/zmzhang/software/sparsehash_install/lib;/home/comp/zmzhang/software/zlib-1.2.11_install/lib;/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib;/home/comp/zmzhang/software/htslib_install/lib;/home/comp/zmzhang/software/deflate/lib;/home/comp/zmzhang/software/anaconda3/envs/sclja/x86_64-conda-linux-gnu/lib;/home/comp/zmzhang/software/anaconda3/envs/sclja/lib;/home/comp/zmzhang/software/anaconda3/envs/sclja/x86_64-conda-linux-gnu/sysroot/lib;/home/comp/zmzhang/software/anaconda3/envs/sclja/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/comp/zmzhang/software/anaconda3/envs/sclja/share/cmake-4.0/Modules/FindOpenMP.cmake:250 (try_compile)"
+      - "/home/comp/zmzhang/software/anaconda3/envs/sclja/share/cmake-4.0/Modules/FindOpenMP.cmake:557 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:62 (find_package)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/build/CMakeFiles/CMakeScratch/TryCompile-4OLVSs"
+      binary: "/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/build/CMakeFiles/CMakeScratch/TryCompile-4OLVSs"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wall -Wextra -Wpedantic -Werror"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/build/CMakeFiles/CMakeScratch/TryCompile-4OLVSs'
+        
+        Run Build Command(s): /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8c88b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8c88b.dir/build.make CMakeFiles/cmTC_8c88b.dir/build
+        gmake[1]: Entering directory '/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/build/CMakeFiles/CMakeScratch/TryCompile-4OLVSs'
+        Building CXX object CMakeFiles/cmTC_8c88b.dir/OpenMPTryFlag.cpp.obj
+        /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/c++   -Wall -Wextra -Wpedantic -Werror -fopenmp -std=c++17 -fPIE -o CMakeFiles/cmTC_8c88b.dir/OpenMPTryFlag.cpp.obj -c /datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/build/CMakeFiles/CMakeScratch/TryCompile-4OLVSs/OpenMPTryFlag.cpp
+        Linking CXX executable cmTC_8c88b
+        /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c88b.dir/link.txt --verbose=1
+        Reading specs from /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/specs
+        could not find specs file conda.specs
+        COLLECT_GCC=/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/c++
+        COLLECT_LTO_WRAPPER=/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.2.0/lto-wrapper
+        Target: x86_64-conda-linux-gnu
+        Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1740238128824/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1740238128824/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1740238128824/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1740238128824/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1740238128824/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1740238128824/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1740238128824/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++ --with-pkgversion='conda-forge gcc 14.2.0-2' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.2.0 (conda-forge gcc 14.2.0-2) 
+        COMPILER_PATH=/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.2.0/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../libexec/gcc/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/:/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib/:/home/comp/zmzhang/software/lib/../lib/:/home/comp/zmzhang/software/bzip2_install/lib/../lib/:/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib/:/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib/:/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib/:/home/comp/zmzhang/software/sparsehash_install/lib/../lib/:/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib/:/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib/:/home/comp/zmzhang/software/htslib_install/lib/../lib/:/home/comp/zmzhang/software/deflate/lib/../lib/:/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib/:/home/comp/zmzhang/software/lib/../lib/:/home/comp/zmzhang/software/bzip2_install/lib/../lib/:/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib/:/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib/:/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib/:/home/comp/zmzhang/software/sparsehash_install/lib/../lib/:/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib/:/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib/:/home/comp/zmzhang/software/htslib_install/lib/../lib/:/home/comp/zmzhang/software/deflate/lib/../lib/:/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib/:/home/comp/zmzhang/software/lib/../lib/:/home/comp/zmzhang/software/bzip2_install/lib/../lib/:/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib/:/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib/:/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib/:/home/comp/zmzhang/software/sparsehash_install/lib/../lib/:/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib/:/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib/:/home/comp/zmzhang/software/htslib_install/lib/../lib/:/home/comp/zmzhang/software/deflate/lib/../lib/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../lib/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/comp/zmzhang/software/expat-2.4.1_install/lib/:/home/comp/zmzhang/software/lib/:/home/comp/zmzhang/software/bzip2_install/lib/:/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/:/home/comp/zmzhang/software/gsl-2.6_install/lib/:/home/comp/zmzhang/software/boost_1_73_0_install/lib/:/home/comp/zmzhang/software/sparsehash_install/lib/:/home/comp/zmzhang/software/zlib-1.2.11_install/lib/:/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/:/home/comp/zmzhang/software/htslib_install/lib/:/home/comp/zmzhang/software/deflate/lib/:/home/comp/zmzhang/software/expat-2.4.1_install/lib/:/home/comp/zmzhang/software/lib/:/home/comp/zmzhang/software/bzip2_install/lib/:/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/:/home/comp/zmzhang/software/gsl-2.6_install/lib/:/home/comp/zmzhang/software/boost_1_73_0_install/lib/:/home/comp/zmzhang/software/sparsehash_install/lib/:/home/comp/zmzhang/software/zlib-1.2.11_install/lib/:/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/:/home/comp/zmzhang/software/htslib_install/lib/:/home/comp/zmzhang/software/deflate/lib/:/home/comp/zmzhang/software/expat-2.4.1_install/lib/:/home/comp/zmzhang/software/lib/:/home/comp/zmzhang/software/bzip2_install/lib/:/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/:/home/comp/zmzhang/software/gsl-2.6_install/lib/:/home/comp/zmzhang/software/boost_1_73_0_install/lib/:/home/comp/zmzhang/software/sparsehash_install/lib/:/home/comp/zmzhang/software/zlib-1.2.11_install/lib/:/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/:/home/comp/zmzhang/software/htslib_install/lib/:/home/comp/zmzhang/software/deflate/lib/:./:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/lib/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        Reading specs from /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib/libgomp.spec
+        COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-Werror' '-fopenmp' '-v' '-o' 'cmTC_8c88b' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_8c88b.'
+         /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.2.0/collect2 -plugin /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.2.0/liblto_plugin.so -plugin-opt=/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc96BT84.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_8c88b /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/crtbeginS.o -L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0 -L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc -L/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib -L/home/comp/zmzhang/software/lib/../lib -L/home/comp/zmzhang/software/bzip2_install/lib/../lib -L/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib -L/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib -L/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib -L/home/comp/zmzhang/software/sparsehash_install/lib/../lib -L/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib -L/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib -L/home/comp/zmzhang/software/htslib_install/lib/../lib -L/home/comp/zmzhang/software/deflate/lib/../lib -L/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib -L/home/comp/zmzhang/software/lib/../lib -L/home/comp/zmzhang/software/bzip2_install/lib/../lib -L/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib -L/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib -L/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib -L/home/comp/zmzhang/software/sparsehash_install/lib/../lib -L/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib -L/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib -L/home/comp/zmzhang/software/htslib_install/lib/../lib -L/home/comp/zmzhang/software/deflate/lib/../lib -L/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib -L/home/comp/zmzhang/software/lib/../lib -L/home/comp/zmzhang/software/bzip2_install/lib/../lib -L/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib -L/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib -L/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib -L/home/comp/zmzhang/software/sparsehash_install/lib/../lib -L/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib -L/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib -L/home/comp/zmzhang/software/htslib_install/lib/../lib -L/home/comp/zmzhang/software/deflate/lib/../lib -L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../lib -L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/home/comp/zmzhang/software/expat-2.4.1_install/lib -L/home/comp/zmzhang/software/lib -L/home/comp/zmzhang/software/bzip2_install/lib -L/home/comp/zmzhang/software/openmpi-4.1.1_install/lib -L/home/comp/zmzhang/software/gsl-2.6_install/lib -L/home/comp/zmzhang/software/boost_1_73_0_install/lib -L/home/comp/zmzhang/software/sparsehash_install/lib -L/home/comp/zmzhang/software/zlib-1.2.11_install/lib -L/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib -L/home/comp/zmzhang/software/htslib_install/lib -L/home/comp/zmzhang/software/deflate/lib -L/home/comp/zmzhang/software/expat-2.4.1_install/lib -L/home/comp/zmzhang/software/lib -L/home/comp/zmzhang/software/bzip2_install/lib -L/home/comp/zmzhang/software/openmpi-4.1.1_install/lib -L/home/comp/zmzhang/software/gsl-2.6_install/lib -L/home/comp/zmzhang/software/boost_1_73_0_install/lib -L/home/comp/zmzhang/software/sparsehash_install/lib -L/home/comp/zmzhang/software/zlib-1.2.11_install/lib -L/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib -L/home/comp/zmzhang/software/htslib_install/lib -L/home/comp/zmzhang/software/deflate/lib -L/home/comp/zmzhang/software/expat-2.4.1_install/lib -L/home/comp/zmzhang/software/lib -L/home/comp/zmzhang/software/bzip2_install/lib -L/home/comp/zmzhang/software/openmpi-4.1.1_install/lib -L/home/comp/zmzhang/software/gsl-2.6_install/lib -L/home/comp/zmzhang/software/boost_1_73_0_install/lib -L/home/comp/zmzhang/software/sparsehash_install/lib -L/home/comp/zmzhang/software/zlib-1.2.11_install/lib -L/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib -L/home/comp/zmzhang/software/htslib_install/lib -L/home/comp/zmzhang/software/deflate/lib -L. -L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/lib -L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../.. -L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib CMakeFiles/cmTC_8c88b.dir/OpenMPTryFlag.cpp.obj -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/crtendS.o /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /home/comp/zmzhang/software/anaconda3/envs/sclja/lib
+        COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-Werror' '-fopenmp' '-v' '-o' 'cmTC_8c88b' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_8c88b.'
+        /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/c++  -Wall -Wextra -Wpedantic -Werror -fopenmp -v CMakeFiles/cmTC_8c88b.dir/OpenMPTryFlag.cpp.obj -o cmTC_8c88b
+        gmake[1]: Leaving directory '/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/build/CMakeFiles/CMakeScratch/TryCompile-4OLVSs'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/comp/zmzhang/software/anaconda3/envs/sclja/share/cmake-4.0/Modules/FindOpenMP.cmake:294 (message)"
+      - "/home/comp/zmzhang/software/anaconda3/envs/sclja/share/cmake-4.0/Modules/FindOpenMP.cmake:557 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:62 (find_package)"
+    message: |
+      Parsed CXX OpenMP implicit link information from above output:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/build/CMakeFiles/CMakeScratch/TryCompile-4OLVSs']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8c88b/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_8c88b.dir/build.make CMakeFiles/cmTC_8c88b.dir/build]
+        ignore line: [gmake[1]: Entering directory '/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/build/CMakeFiles/CMakeScratch/TryCompile-4OLVSs']
+        ignore line: [Building CXX object CMakeFiles/cmTC_8c88b.dir/OpenMPTryFlag.cpp.obj]
+        ignore line: [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/c++   -Wall -Wextra -Wpedantic -Werror -fopenmp -std=c++17 -fPIE -o CMakeFiles/cmTC_8c88b.dir/OpenMPTryFlag.cpp.obj -c /datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/build/CMakeFiles/CMakeScratch/TryCompile-4OLVSs/OpenMPTryFlag.cpp]
+        ignore line: [Linking CXX executable cmTC_8c88b]
+        ignore line: [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c88b.dir/link.txt --verbose=1]
+        ignore line: [Reading specs from /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/specs]
+        ignore line: [could not find specs file conda.specs]
+        ignore line: [COLLECT_GCC=/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.2.0/lto-wrapper]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1740238128824/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1740238128824/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1740238128824/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1740238128824/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1740238128824/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1740238128824/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1740238128824/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++ --with-pkgversion='conda-forge gcc 14.2.0-2' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.2.0 (conda-forge gcc 14.2.0-2) ]
+        ignore line: [COMPILER_PATH=/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.2.0/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../libexec/gcc/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/:/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib/:/home/comp/zmzhang/software/lib/../lib/:/home/comp/zmzhang/software/bzip2_install/lib/../lib/:/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib/:/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib/:/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib/:/home/comp/zmzhang/software/sparsehash_install/lib/../lib/:/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib/:/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib/:/home/comp/zmzhang/software/htslib_install/lib/../lib/:/home/comp/zmzhang/software/deflate/lib/../lib/:/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib/:/home/comp/zmzhang/software/lib/../lib/:/home/comp/zmzhang/software/bzip2_install/lib/../lib/:/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib/:/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib/:/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib/:/home/comp/zmzhang/software/sparsehash_install/lib/../lib/:/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib/:/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib/:/home/comp/zmzhang/software/htslib_install/lib/../lib/:/home/comp/zmzhang/software/deflate/lib/../lib/:/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib/:/home/comp/zmzhang/software/lib/../lib/:/home/comp/zmzhang/software/bzip2_install/lib/../lib/:/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib/:/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib/:/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib/:/home/comp/zmzhang/software/sparsehash_install/lib/../lib/:/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib/:/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib/:/home/comp/zmzhang/software/htslib_install/lib/../lib/:/home/comp/zmzhang/software/deflate/lib/../lib/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../lib/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/comp/zmzhang/software/expat-2.4.1_install/lib/:/home/comp/zmzhang/software/lib/:/home/comp/zmzhang/software/bzip2_install/lib/:/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/:/home/comp/zmzhang/software/gsl-2.6_install/lib/:/home/comp/zmzhang/software/boost_1_73_0_install/lib/:/home/comp/zmzhang/software/sparsehash_install/lib/:/home/comp/zmzhang/software/zlib-1.2.11_install/lib/:/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/:/home/comp/zmzhang/software/htslib_install/lib/:/home/comp/zmzhang/software/deflate/lib/:/home/comp/zmzhang/software/expat-2.4.1_install/lib/:/home/comp/zmzhang/software/lib/:/home/comp/zmzhang/software/bzip2_install/lib/:/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/:/home/comp/zmzhang/software/gsl-2.6_install/lib/:/home/comp/zmzhang/software/boost_1_73_0_install/lib/:/home/comp/zmzhang/software/sparsehash_install/lib/:/home/comp/zmzhang/software/zlib-1.2.11_install/lib/:/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/:/home/comp/zmzhang/software/htslib_install/lib/:/home/comp/zmzhang/software/deflate/lib/:/home/comp/zmzhang/software/expat-2.4.1_install/lib/:/home/comp/zmzhang/software/lib/:/home/comp/zmzhang/software/bzip2_install/lib/:/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/:/home/comp/zmzhang/software/gsl-2.6_install/lib/:/home/comp/zmzhang/software/boost_1_73_0_install/lib/:/home/comp/zmzhang/software/sparsehash_install/lib/:/home/comp/zmzhang/software/zlib-1.2.11_install/lib/:/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/:/home/comp/zmzhang/software/htslib_install/lib/:/home/comp/zmzhang/software/deflate/lib/:./:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/lib/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [Reading specs from /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib/libgomp.spec]
+        ignore line: [COLLECT_GCC_OPTIONS='-Wall' '-Wextra' '-Wpedantic' '-Werror' '-fopenmp' '-v' '-o' 'cmTC_8c88b' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_8c88b.']
+        link line: [ /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.2.0/collect2 -plugin /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.2.0/liblto_plugin.so -plugin-opt=/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc96BT84.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_8c88b /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/crtbeginS.o -L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0 -L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc -L/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib -L/home/comp/zmzhang/software/lib/../lib -L/home/comp/zmzhang/software/bzip2_install/lib/../lib -L/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib -L/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib -L/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib -L/home/comp/zmzhang/software/sparsehash_install/lib/../lib -L/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib -L/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib -L/home/comp/zmzhang/software/htslib_install/lib/../lib -L/home/comp/zmzhang/software/deflate/lib/../lib -L/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib -L/home/comp/zmzhang/software/lib/../lib -L/home/comp/zmzhang/software/bzip2_install/lib/../lib -L/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib -L/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib -L/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib -L/home/comp/zmzhang/software/sparsehash_install/lib/../lib -L/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib -L/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib -L/home/comp/zmzhang/software/htslib_install/lib/../lib -L/home/comp/zmzhang/software/deflate/lib/../lib -L/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib -L/home/comp/zmzhang/software/lib/../lib -L/home/comp/zmzhang/software/bzip2_install/lib/../lib -L/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib -L/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib -L/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib -L/home/comp/zmzhang/software/sparsehash_install/lib/../lib -L/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib -L/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib -L/home/comp/zmzhang/software/htslib_install/lib/../lib -L/home/comp/zmzhang/software/deflate/lib/../lib -L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../lib -L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/home/comp/zmzhang/software/expat-2.4.1_install/lib -L/home/comp/zmzhang/software/lib -L/home/comp/zmzhang/software/bzip2_install/lib -L/home/comp/zmzhang/software/openmpi-4.1.1_install/lib -L/home/comp/zmzhang/software/gsl-2.6_install/lib -L/home/comp/zmzhang/software/boost_1_73_0_install/lib -L/home/comp/zmzhang/software/sparsehash_install/lib -L/home/comp/zmzhang/software/zlib-1.2.11_install/lib -L/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib -L/home/comp/zmzhang/software/htslib_install/lib -L/home/comp/zmzhang/software/deflate/lib -L/home/comp/zmzhang/software/expat-2.4.1_install/lib -L/home/comp/zmzhang/software/lib -L/home/comp/zmzhang/software/bzip2_install/lib -L/home/comp/zmzhang/software/openmpi-4.1.1_install/lib -L/home/comp/zmzhang/software/gsl-2.6_install/lib -L/home/comp/zmzhang/software/boost_1_73_0_install/lib -L/home/comp/zmzhang/software/sparsehash_install/lib -L/home/comp/zmzhang/software/zlib-1.2.11_install/lib -L/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib -L/home/comp/zmzhang/software/htslib_install/lib -L/home/comp/zmzhang/software/deflate/lib -L/home/comp/zmzhang/software/expat-2.4.1_install/lib -L/home/comp/zmzhang/software/lib -L/home/comp/zmzhang/software/bzip2_install/lib -L/home/comp/zmzhang/software/openmpi-4.1.1_install/lib -L/home/comp/zmzhang/software/gsl-2.6_install/lib -L/home/comp/zmzhang/software/boost_1_73_0_install/lib -L/home/comp/zmzhang/software/sparsehash_install/lib -L/home/comp/zmzhang/software/zlib-1.2.11_install/lib -L/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib -L/home/comp/zmzhang/software/htslib_install/lib -L/home/comp/zmzhang/software/deflate/lib -L. -L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/lib -L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../.. -L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib CMakeFiles/cmTC_8c88b.dir/OpenMPTryFlag.cpp.obj -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/crtendS.o /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /home/comp/zmzhang/software/anaconda3/envs/sclja/lib]
+          arg [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.2.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.2.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.2.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc96BT84.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--sysroot=/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_8c88b] ==> ignore
+          arg [-L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0] ==> dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0]
+          arg [-L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc] ==> dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc]
+          arg [-L/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/lib/../lib] ==> dir [/home/comp/zmzhang/software/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/bzip2_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/bzip2_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/sparsehash_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/sparsehash_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/htslib_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/htslib_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/deflate/lib/../lib] ==> dir [/home/comp/zmzhang/software/deflate/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/lib/../lib] ==> dir [/home/comp/zmzhang/software/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/bzip2_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/bzip2_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/sparsehash_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/sparsehash_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/htslib_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/htslib_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/deflate/lib/../lib] ==> dir [/home/comp/zmzhang/software/deflate/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/lib/../lib] ==> dir [/home/comp/zmzhang/software/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/bzip2_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/bzip2_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/sparsehash_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/sparsehash_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/htslib_install/lib/../lib] ==> dir [/home/comp/zmzhang/software/htslib_install/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/deflate/lib/../lib] ==> dir [/home/comp/zmzhang/software/deflate/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../lib] ==> dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../lib]
+          arg [-L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib]
+          arg [-L/home/comp/zmzhang/software/expat-2.4.1_install/lib] ==> dir [/home/comp/zmzhang/software/expat-2.4.1_install/lib]
+          arg [-L/home/comp/zmzhang/software/lib] ==> dir [/home/comp/zmzhang/software/lib]
+          arg [-L/home/comp/zmzhang/software/bzip2_install/lib] ==> dir [/home/comp/zmzhang/software/bzip2_install/lib]
+          arg [-L/home/comp/zmzhang/software/openmpi-4.1.1_install/lib] ==> dir [/home/comp/zmzhang/software/openmpi-4.1.1_install/lib]
+          arg [-L/home/comp/zmzhang/software/gsl-2.6_install/lib] ==> dir [/home/comp/zmzhang/software/gsl-2.6_install/lib]
+          arg [-L/home/comp/zmzhang/software/boost_1_73_0_install/lib] ==> dir [/home/comp/zmzhang/software/boost_1_73_0_install/lib]
+          arg [-L/home/comp/zmzhang/software/sparsehash_install/lib] ==> dir [/home/comp/zmzhang/software/sparsehash_install/lib]
+          arg [-L/home/comp/zmzhang/software/zlib-1.2.11_install/lib] ==> dir [/home/comp/zmzhang/software/zlib-1.2.11_install/lib]
+          arg [-L/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib] ==> dir [/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib]
+          arg [-L/home/comp/zmzhang/software/htslib_install/lib] ==> dir [/home/comp/zmzhang/software/htslib_install/lib]
+          arg [-L/home/comp/zmzhang/software/deflate/lib] ==> dir [/home/comp/zmzhang/software/deflate/lib]
+          arg [-L/home/comp/zmzhang/software/expat-2.4.1_install/lib] ==> dir [/home/comp/zmzhang/software/expat-2.4.1_install/lib]
+          arg [-L/home/comp/zmzhang/software/lib] ==> dir [/home/comp/zmzhang/software/lib]
+          arg [-L/home/comp/zmzhang/software/bzip2_install/lib] ==> dir [/home/comp/zmzhang/software/bzip2_install/lib]
+          arg [-L/home/comp/zmzhang/software/openmpi-4.1.1_install/lib] ==> dir [/home/comp/zmzhang/software/openmpi-4.1.1_install/lib]
+          arg [-L/home/comp/zmzhang/software/gsl-2.6_install/lib] ==> dir [/home/comp/zmzhang/software/gsl-2.6_install/lib]
+          arg [-L/home/comp/zmzhang/software/boost_1_73_0_install/lib] ==> dir [/home/comp/zmzhang/software/boost_1_73_0_install/lib]
+          arg [-L/home/comp/zmzhang/software/sparsehash_install/lib] ==> dir [/home/comp/zmzhang/software/sparsehash_install/lib]
+          arg [-L/home/comp/zmzhang/software/zlib-1.2.11_install/lib] ==> dir [/home/comp/zmzhang/software/zlib-1.2.11_install/lib]
+          arg [-L/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib] ==> dir [/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib]
+          arg [-L/home/comp/zmzhang/software/htslib_install/lib] ==> dir [/home/comp/zmzhang/software/htslib_install/lib]
+          arg [-L/home/comp/zmzhang/software/deflate/lib] ==> dir [/home/comp/zmzhang/software/deflate/lib]
+          arg [-L/home/comp/zmzhang/software/expat-2.4.1_install/lib] ==> dir [/home/comp/zmzhang/software/expat-2.4.1_install/lib]
+          arg [-L/home/comp/zmzhang/software/lib] ==> dir [/home/comp/zmzhang/software/lib]
+          arg [-L/home/comp/zmzhang/software/bzip2_install/lib] ==> dir [/home/comp/zmzhang/software/bzip2_install/lib]
+          arg [-L/home/comp/zmzhang/software/openmpi-4.1.1_install/lib] ==> dir [/home/comp/zmzhang/software/openmpi-4.1.1_install/lib]
+          arg [-L/home/comp/zmzhang/software/gsl-2.6_install/lib] ==> dir [/home/comp/zmzhang/software/gsl-2.6_install/lib]
+          arg [-L/home/comp/zmzhang/software/boost_1_73_0_install/lib] ==> dir [/home/comp/zmzhang/software/boost_1_73_0_install/lib]
+          arg [-L/home/comp/zmzhang/software/sparsehash_install/lib] ==> dir [/home/comp/zmzhang/software/sparsehash_install/lib]
+          arg [-L/home/comp/zmzhang/software/zlib-1.2.11_install/lib] ==> dir [/home/comp/zmzhang/software/zlib-1.2.11_install/lib]
+          arg [-L/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib] ==> dir [/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib]
+          arg [-L/home/comp/zmzhang/software/htslib_install/lib] ==> dir [/home/comp/zmzhang/software/htslib_install/lib]
+          arg [-L/home/comp/zmzhang/software/deflate/lib] ==> dir [/home/comp/zmzhang/software/deflate/lib]
+          arg [-L.] ==> ignore
+          arg [-L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/lib] ==> dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/lib]
+          arg [-L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../..] ==> dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../..]
+          arg [-L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/lib]
+          arg [-L/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib]
+          arg [CMakeFiles/cmTC_8c88b.dir/OpenMPTryFlag.cpp.obj] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgomp] ==> lib [gomp]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-rpath] ==> ignore
+          arg [/home/comp/zmzhang/software/anaconda3/envs/sclja/lib] ==> ignore
+        collapse library dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0] ==> [/home/comp/zmzhang/software/anaconda3/envs/sclja/lib/gcc/x86_64-conda-linux-gnu/14.2.0]
+        collapse library dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc] ==> [/home/comp/zmzhang/software/anaconda3/envs/sclja/lib/gcc]
+        collapse library dir [/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib] ==> [/home/comp/zmzhang/software/expat-2.4.1_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/lib/../lib] ==> [/home/comp/zmzhang/software/lib]
+        collapse library dir [/home/comp/zmzhang/software/bzip2_install/lib/../lib] ==> [/home/comp/zmzhang/software/bzip2_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib] ==> [/home/comp/zmzhang/software/openmpi-4.1.1_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib] ==> [/home/comp/zmzhang/software/gsl-2.6_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib] ==> [/home/comp/zmzhang/software/boost_1_73_0_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/sparsehash_install/lib/../lib] ==> [/home/comp/zmzhang/software/sparsehash_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib] ==> [/home/comp/zmzhang/software/zlib-1.2.11_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib] ==> [/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/htslib_install/lib/../lib] ==> [/home/comp/zmzhang/software/htslib_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/deflate/lib/../lib] ==> [/home/comp/zmzhang/software/deflate/lib]
+        collapse library dir [/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib] ==> [/home/comp/zmzhang/software/expat-2.4.1_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/lib/../lib] ==> [/home/comp/zmzhang/software/lib]
+        collapse library dir [/home/comp/zmzhang/software/bzip2_install/lib/../lib] ==> [/home/comp/zmzhang/software/bzip2_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib] ==> [/home/comp/zmzhang/software/openmpi-4.1.1_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib] ==> [/home/comp/zmzhang/software/gsl-2.6_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib] ==> [/home/comp/zmzhang/software/boost_1_73_0_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/sparsehash_install/lib/../lib] ==> [/home/comp/zmzhang/software/sparsehash_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib] ==> [/home/comp/zmzhang/software/zlib-1.2.11_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib] ==> [/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/htslib_install/lib/../lib] ==> [/home/comp/zmzhang/software/htslib_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/deflate/lib/../lib] ==> [/home/comp/zmzhang/software/deflate/lib]
+        collapse library dir [/home/comp/zmzhang/software/expat-2.4.1_install/lib/../lib] ==> [/home/comp/zmzhang/software/expat-2.4.1_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/lib/../lib] ==> [/home/comp/zmzhang/software/lib]
+        collapse library dir [/home/comp/zmzhang/software/bzip2_install/lib/../lib] ==> [/home/comp/zmzhang/software/bzip2_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/openmpi-4.1.1_install/lib/../lib] ==> [/home/comp/zmzhang/software/openmpi-4.1.1_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/gsl-2.6_install/lib/../lib] ==> [/home/comp/zmzhang/software/gsl-2.6_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/boost_1_73_0_install/lib/../lib] ==> [/home/comp/zmzhang/software/boost_1_73_0_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/sparsehash_install/lib/../lib] ==> [/home/comp/zmzhang/software/sparsehash_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/zlib-1.2.11_install/lib/../lib] ==> [/home/comp/zmzhang/software/zlib-1.2.11_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib/../lib] ==> [/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/htslib_install/lib/../lib] ==> [/home/comp/zmzhang/software/htslib_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/deflate/lib/../lib] ==> [/home/comp/zmzhang/software/deflate/lib]
+        collapse library dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> [/home/comp/zmzhang/software/anaconda3/envs/sclja/x86_64-conda-linux-gnu/lib]
+        collapse library dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../lib] ==> [/home/comp/zmzhang/software/anaconda3/envs/sclja/lib]
+        collapse library dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> [/home/comp/zmzhang/software/anaconda3/envs/sclja/x86_64-conda-linux-gnu/sysroot/lib]
+        collapse library dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> [/home/comp/zmzhang/software/anaconda3/envs/sclja/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        collapse library dir [/home/comp/zmzhang/software/expat-2.4.1_install/lib] ==> [/home/comp/zmzhang/software/expat-2.4.1_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/lib] ==> [/home/comp/zmzhang/software/lib]
+        collapse library dir [/home/comp/zmzhang/software/bzip2_install/lib] ==> [/home/comp/zmzhang/software/bzip2_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/openmpi-4.1.1_install/lib] ==> [/home/comp/zmzhang/software/openmpi-4.1.1_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/gsl-2.6_install/lib] ==> [/home/comp/zmzhang/software/gsl-2.6_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/boost_1_73_0_install/lib] ==> [/home/comp/zmzhang/software/boost_1_73_0_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/sparsehash_install/lib] ==> [/home/comp/zmzhang/software/sparsehash_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/zlib-1.2.11_install/lib] ==> [/home/comp/zmzhang/software/zlib-1.2.11_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib] ==> [/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/htslib_install/lib] ==> [/home/comp/zmzhang/software/htslib_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/deflate/lib] ==> [/home/comp/zmzhang/software/deflate/lib]
+        collapse library dir [/home/comp/zmzhang/software/expat-2.4.1_install/lib] ==> [/home/comp/zmzhang/software/expat-2.4.1_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/lib] ==> [/home/comp/zmzhang/software/lib]
+        collapse library dir [/home/comp/zmzhang/software/bzip2_install/lib] ==> [/home/comp/zmzhang/software/bzip2_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/openmpi-4.1.1_install/lib] ==> [/home/comp/zmzhang/software/openmpi-4.1.1_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/gsl-2.6_install/lib] ==> [/home/comp/zmzhang/software/gsl-2.6_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/boost_1_73_0_install/lib] ==> [/home/comp/zmzhang/software/boost_1_73_0_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/sparsehash_install/lib] ==> [/home/comp/zmzhang/software/sparsehash_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/zlib-1.2.11_install/lib] ==> [/home/comp/zmzhang/software/zlib-1.2.11_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib] ==> [/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/htslib_install/lib] ==> [/home/comp/zmzhang/software/htslib_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/deflate/lib] ==> [/home/comp/zmzhang/software/deflate/lib]
+        collapse library dir [/home/comp/zmzhang/software/expat-2.4.1_install/lib] ==> [/home/comp/zmzhang/software/expat-2.4.1_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/lib] ==> [/home/comp/zmzhang/software/lib]
+        collapse library dir [/home/comp/zmzhang/software/bzip2_install/lib] ==> [/home/comp/zmzhang/software/bzip2_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/openmpi-4.1.1_install/lib] ==> [/home/comp/zmzhang/software/openmpi-4.1.1_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/gsl-2.6_install/lib] ==> [/home/comp/zmzhang/software/gsl-2.6_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/boost_1_73_0_install/lib] ==> [/home/comp/zmzhang/software/boost_1_73_0_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/sparsehash_install/lib] ==> [/home/comp/zmzhang/software/sparsehash_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/zlib-1.2.11_install/lib] ==> [/home/comp/zmzhang/software/zlib-1.2.11_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib] ==> [/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/htslib_install/lib] ==> [/home/comp/zmzhang/software/htslib_install/lib]
+        collapse library dir [/home/comp/zmzhang/software/deflate/lib] ==> [/home/comp/zmzhang/software/deflate/lib]
+        collapse library dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../../../x86_64-conda-linux-gnu/lib] ==> [/home/comp/zmzhang/software/anaconda3/envs/sclja/x86_64-conda-linux-gnu/lib]
+        collapse library dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../lib/gcc/x86_64-conda-linux-gnu/14.2.0/../../..] ==> [/home/comp/zmzhang/software/anaconda3/envs/sclja/lib]
+        collapse library dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> [/home/comp/zmzhang/software/anaconda3/envs/sclja/x86_64-conda-linux-gnu/sysroot/lib]
+        collapse library dir [/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> [/home/comp/zmzhang/software/anaconda3/envs/sclja/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        implicit libs: [stdc++;m;gomp;gcc_s;gcc;pthread;c;gcc_s;gcc]
+        implicit objs: []
+        implicit dirs: [/home/comp/zmzhang/software/anaconda3/envs/sclja/lib/gcc/x86_64-conda-linux-gnu/14.2.0;/home/comp/zmzhang/software/anaconda3/envs/sclja/lib/gcc;/home/comp/zmzhang/software/expat-2.4.1_install/lib;/home/comp/zmzhang/software/lib;/home/comp/zmzhang/software/bzip2_install/lib;/home/comp/zmzhang/software/openmpi-4.1.1_install/lib;/home/comp/zmzhang/software/gsl-2.6_install/lib;/home/comp/zmzhang/software/boost_1_73_0_install/lib;/home/comp/zmzhang/software/sparsehash_install/lib;/home/comp/zmzhang/software/zlib-1.2.11_install/lib;/home/comp/zmzhang/software/arpack-ng-3.8.0_install/lib;/home/comp/zmzhang/software/htslib_install/lib;/home/comp/zmzhang/software/deflate/lib;/home/comp/zmzhang/software/anaconda3/envs/sclja/x86_64-conda-linux-gnu/lib;/home/comp/zmzhang/software/anaconda3/envs/sclja/lib;/home/comp/zmzhang/software/anaconda3/envs/sclja/x86_64-conda-linux-gnu/sysroot/lib;/home/comp/zmzhang/software/anaconda3/envs/sclja/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/comp/zmzhang/software/anaconda3/envs/sclja/share/cmake-4.0/Modules/FindOpenMP.cmake:491 (try_compile)"
+      - "/home/comp/zmzhang/software/anaconda3/envs/sclja/share/cmake-4.0/Modules/FindOpenMP.cmake:631 (_OPENMP_GET_SPEC_DATE)"
+      - "CMakeLists.txt:62 (find_package)"
+    description: "Detecting CXX OpenMP version"
+    directories:
+      source: "/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/build/CMakeFiles/CMakeScratch/TryCompile-J7JW1k"
+      binary: "/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/build/CMakeFiles/CMakeScratch/TryCompile-J7JW1k"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -Wall -Wextra -Wpedantic -Werror"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "OpenMP_SPECTEST_CXX_"
+      cached: true
+      stdout: |
+        Change Dir: '/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/build/CMakeFiles/CMakeScratch/TryCompile-J7JW1k'
+        
+        Run Build Command(s): /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_dcbb4/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_dcbb4.dir/build.make CMakeFiles/cmTC_dcbb4.dir/build
+        gmake[1]: Entering directory '/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/build/CMakeFiles/CMakeScratch/TryCompile-J7JW1k'
+        Building CXX object CMakeFiles/cmTC_dcbb4.dir/OpenMPCheckVersion.cpp.obj
+        /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/c++   -Wall -Wextra -Wpedantic -Werror -fopenmp -std=c++17 -fPIE -o CMakeFiles/cmTC_dcbb4.dir/OpenMPCheckVersion.cpp.obj -c /datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/build/CMakeFiles/CMakeScratch/TryCompile-J7JW1k/OpenMPCheckVersion.cpp
+        Linking CXX executable cmTC_dcbb4
+        /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dcbb4.dir/link.txt --verbose=1
+        /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/c++  -Wall -Wextra -Wpedantic -Werror -fopenmp CMakeFiles/cmTC_dcbb4.dir/OpenMPCheckVersion.cpp.obj -o cmTC_dcbb4
+        gmake[1]: Leaving directory '/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/build/CMakeFiles/CMakeScratch/TryCompile-J7JW1k'
+        
+      exitCode: 0
+...

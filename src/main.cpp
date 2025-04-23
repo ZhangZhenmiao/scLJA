@@ -4,11 +4,12 @@
 #include <map>
 #include <algorithm>
 #include "align_SAGs.hpp"
+#include "GFA_graph.hpp"
 
 namespace fs = std::filesystem;
 
 struct ProgramOptions {
-    fs::path assembly_path;
+    fs::path gfa_path;
     fs::path sag_path;
     fs::path output_path;
     bool verbose = false;
@@ -31,7 +32,7 @@ void print_help(const char* program_name) {
 ProgramOptions parse_arguments(int argc, char* argv[]) {
     ProgramOptions options;
     std::map<std::string, fs::path*> arg_map = {
-        {"--assembly", &options.assembly_path},
+        {"--assembly", &options.gfa_path},
         {"--sag", &options.sag_path},
         {"--output", &options.output_path}
     };
@@ -58,7 +59,7 @@ ProgramOptions parse_arguments(int argc, char* argv[]) {
     }
 
     // Validate required options
-    if (options.assembly_path.empty() || options.sag_path.empty() || options.output_path.empty()) {
+    if (options.gfa_path.empty() || options.sag_path.empty() || options.output_path.empty()) {
         throw std::runtime_error("--assembly, --sag, and --output options are required");
     }
 
@@ -72,7 +73,7 @@ void validate_paths(const ProgramOptions& options) {
         }
         };
 
-    check_path(options.assembly_path, "Assembly");
+    check_path(options.gfa_path, "Assembly");
     check_path(options.sag_path, "SAG");
 }
 
@@ -88,8 +89,8 @@ int main(int argc, char* argv[]) {
 
     if (options.verbose) {
         std::cout << "=== Processing Parameters ===\n"
-            << "Assembly file: " << fs::absolute(options.assembly_path) << "\n"
-            << "SAG file:     " << fs::absolute(options.sag_path) << "\n"
+            << "GFA file: " << fs::absolute(options.gfa_path) << "\n"
+            << "SAG dir:     " << fs::absolute(options.sag_path) << "\n"
             << "Output dir:   " << fs::absolute(options.output_path) << "\n"
             << "Verbose mode: " << (options.verbose ? "ON" : "OFF") << "\n\n";
     }
@@ -102,6 +103,22 @@ int main(int argc, char* argv[]) {
     // Program start
     // ==============================================
 
-    SAGAligner aligner(options.assembly_path, options.sag_path, options.output_path);
+    if (options.verbose) {
+        std::cout << "=== Program start ===\n";
+    }
+    GFAGraph::set_verbose(options.verbose);
+    GFAGraph graph(options.gfa_path);
+
+    graph.assign_edge_type();
+
+    fs::create_directory(options.output_path);
+    fs::path assembly_path = options.output_path / "contigs.fasta";
+    if (!fs::exists(assembly_path))
+        graph.write_fasta(assembly_path);
+
+    SAGAligner::set_verbose(options.verbose);
+    SAGAligner aligner(assembly_path, options.sag_path, options.output_path);
+    aligner.countReads(graph);
+
     return 0;
 }

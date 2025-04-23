@@ -1,1 +1,0 @@
-/usr/bin/c++  -Wall -Wextra -Wpedantic -Werror CMakeFiles/scLJA.dir/src/align_SAGs.cpp.o CMakeFiles/scLJA.dir/src/main.cpp.o CMakeFiles/scLJA.dir/src/utils.cpp.o -o bin/scLJA  /usr/lib64/libz.so -lstdc++fs /usr/lib/gcc/x86_64-redhat-linux/8/libgomp.so /usr/lib64/libpthread.so 
