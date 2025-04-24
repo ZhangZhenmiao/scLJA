@@ -2,7 +2,7 @@
 #include <filesystem>
 #include <map>
 #include <unordered_map>
-#include "GFA_graph.hpp"
+#include "process_GFA.hpp"
 
 namespace fs = std::filesystem;
 
@@ -15,8 +15,8 @@ public:
 
     SAGAligner(const fs::path& assembly_path, const std::string& SAGs_dir, const std::string& output_dir, int thread = 100);
 
-    std::map<std::string, int> getReadCounts(const fs::path& bam_path, const fs::path& output_file, GFAGraph& graph, float min_identity = 0.99f, int min_mapq = 40);
-    void countReads(GFAGraph& graph);
+    std::map<std::string, int> getReadCounts(const fs::path& bam_path, const fs::path& output_file, gfa::GFAGraph& graph, float min_identity = 0.99f, int min_mapq = 40);
+    void countReads(gfa::GFAGraph& graph);
 
     inline static void set_verbose(bool verbose) { verbose_ = verbose; }
     inline static bool get_verbose() { return verbose_; }

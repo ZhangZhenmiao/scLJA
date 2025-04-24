@@ -13,7 +13,7 @@
 #include <unordered_map>
 #include <unordered_set>
 #include <map>
-#include "GFA_graph.hpp"
+#include "process_GFA.hpp"
 
 #define BUFFER_SIZE 4096
 
@@ -183,7 +183,7 @@ SAGAligner::SAGAligner(const fs::path& assembly_path, const std::string& SAGs_di
 }
 
 
-std::map<std::string, int> SAGAligner::getReadCounts(const fs::path& bam_path, const fs::path& output_file, GFAGraph& graph, float min_identity, int min_mapq) {
+std::map<std::string, int> SAGAligner::getReadCounts(const fs::path& bam_path, const fs::path& output_file, gfa::GFAGraph& graph, float min_identity, int min_mapq) {
     // Open BAM file
     samFile* bam_file = sam_open(bam_path.c_str(), "r");
     if (!bam_file) {
@@ -273,9 +273,9 @@ std::map<std::string, int> SAGAligner::getReadCounts(const fs::path& bam_path, c
     int cnt_0_1 = 0;
     out << "contig_name\tlen\tstatus\tread_count\tdensity\n";
     for (const auto& [contig, count] : high_confidence_counts) {
-        auto status = graph.get_node(contig).status == GFAGraph::EdgeStats::CIRCULAR ? "circular" : (graph.get_node(contig).status == GFAGraph::EdgeStats::LINEAR ? "linear" : "complex");
-        out << contig << "\t" << graph.get_node(contig).sequence.size() << "\t" << status << "\t" << count << "\t" << std::fixed << static_cast<float>(count) * 150 / graph.get_node(contig).sequence.size() << "\n";
-        if (static_cast<float>(count) * 150 / graph.get_node(contig).sequence.size() > 0.1)
+        auto status = graph.getNode(contig)->status == gfa::Circular::CIRCULAR ? "circular" : (graph.getNode(contig)->status == gfa::Circular::LINEAR ? "linear" : "complex");
+        out << contig << "\t" << graph.getNode(contig)->sequence.size() << "\t" << status << "\t" << count << "\t" << std::fixed << static_cast<float>(count) * 150 / graph.getNode(contig)->sequence.size() << "\n";
+        if (static_cast<float>(count) * 150 / graph.getNode(contig)->sequence.size() > 0.1)
             cnt_0_1++;
     }
 
@@ -292,7 +292,7 @@ std::map<std::string, int> SAGAligner::getReadCounts(const fs::path& bam_path, c
     return high_confidence_counts;
 }
 
-void SAGAligner::countReads(GFAGraph& graph) {
+void SAGAligner::countReads(gfa::GFAGraph& graph) {
 #pragma omp parallel for
     for (size_t i = 0; i < bam_files.size(); ++i) {
         auto bam_it = bam_files.begin();

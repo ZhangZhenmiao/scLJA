@@ -4,7 +4,7 @@
 # compile CXX with /home/comp/zmzhang/software/anaconda3/envs/sclja/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/src -I/home/comp/zmzhang/software/anaconda3/envs/sclja/include/htslib -I/home/comp/zmzhang/software/anaconda3/envs/sclja/include
+CXX_INCLUDES = -I/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/src -I/home/comp/zmzhang/software/anaconda3/envs/sclja/include/htslib -I/home/comp/zmzhang/software/anaconda3/envs/sclja/include -I/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/lib/edlib/include
 
-CXX_FLAGS =  -Wall -Wextra -Wpedantic -Werror -std=c++17 -fPIE -fopenmp
+CXX_FLAGS =  -Wall -Wextra -Wpedantic -Werror -g -std=c++17 -fPIE -g -fopenmp -fopenmp
 

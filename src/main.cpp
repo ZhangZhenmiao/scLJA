@@ -4,7 +4,8 @@
 #include <map>
 #include <algorithm>
 #include "align_SAGs.hpp"
-#include "GFA_graph.hpp"
+#include "process_GFA.hpp"
+// #include "dot_graph.hpp"
 
 namespace fs = std::filesystem;
 
@@ -106,19 +107,25 @@ int main(int argc, char* argv[]) {
     if (options.verbose) {
         std::cout << "=== Program start ===\n";
     }
-    GFAGraph::set_verbose(options.verbose);
-    GFAGraph graph(options.gfa_path);
+    gfa::GFAGraph::set_verbose(options.verbose);
+    gfa::GFAGraph graph(options.gfa_path);
 
-    graph.assign_edge_type();
-
+    graph.assign_node_type();
+    graph.collapse_short_edges(50000);
     fs::create_directory(options.output_path);
-    fs::path assembly_path = options.output_path / "contigs.fasta";
-    if (!fs::exists(assembly_path))
-        graph.write_fasta(assembly_path);
+    graph.write_gfa(options.output_path / "contracted.gfa");
 
-    SAGAligner::set_verbose(options.verbose);
-    SAGAligner aligner(assembly_path, options.sag_path, options.output_path);
-    aligner.countReads(graph);
+    // dot_graph::Graph dot;
+    // dot.read_from_gfa(graph);
+
+    // fs::create_directory(options.output_path);
+    // fs::path assembly_path = options.output_path / "contigs.fasta";
+    // if (!fs::exists(assembly_path))
+    //     graph.write_fasta(assembly_path);
+
+    // SAGAligner::set_verbose(options.verbose);
+    // SAGAligner aligner(assembly_path, options.sag_path, options.output_path);
+    // aligner.countReads(graph);
 
     return 0;
 }

@@ -174,29 +174,29 @@ scLJA/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/scLJA.dir/build.make CMakeFiles/scLJA.dir/build
 .PHONY : scLJA/fast
 
-src/GFA_graph.obj: src/GFA_graph.cpp.obj
-.PHONY : src/GFA_graph.obj
+lib/edlib/src/edlib.obj: lib/edlib/src/edlib.cpp.obj
+.PHONY : lib/edlib/src/edlib.obj
 
 # target to build an object file
-src/GFA_graph.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scLJA.dir/build.make CMakeFiles/scLJA.dir/src/GFA_graph.cpp.obj
-.PHONY : src/GFA_graph.cpp.obj
+lib/edlib/src/edlib.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scLJA.dir/build.make CMakeFiles/scLJA.dir/lib/edlib/src/edlib.cpp.obj
+.PHONY : lib/edlib/src/edlib.cpp.obj
 
-src/GFA_graph.i: src/GFA_graph.cpp.i
-.PHONY : src/GFA_graph.i
+lib/edlib/src/edlib.i: lib/edlib/src/edlib.cpp.i
+.PHONY : lib/edlib/src/edlib.i
 
 # target to preprocess a source file
-src/GFA_graph.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scLJA.dir/build.make CMakeFiles/scLJA.dir/src/GFA_graph.cpp.i
-.PHONY : src/GFA_graph.cpp.i
+lib/edlib/src/edlib.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scLJA.dir/build.make CMakeFiles/scLJA.dir/lib/edlib/src/edlib.cpp.i
+.PHONY : lib/edlib/src/edlib.cpp.i
 
-src/GFA_graph.s: src/GFA_graph.cpp.s
-.PHONY : src/GFA_graph.s
+lib/edlib/src/edlib.s: lib/edlib/src/edlib.cpp.s
+.PHONY : lib/edlib/src/edlib.s
 
 # target to generate assembly for a file
-src/GFA_graph.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scLJA.dir/build.make CMakeFiles/scLJA.dir/src/GFA_graph.cpp.s
-.PHONY : src/GFA_graph.cpp.s
+lib/edlib/src/edlib.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scLJA.dir/build.make CMakeFiles/scLJA.dir/lib/edlib/src/edlib.cpp.s
+.PHONY : lib/edlib/src/edlib.cpp.s
 
 src/align_SAGs.obj: src/align_SAGs.cpp.obj
 .PHONY : src/align_SAGs.obj
@@ -222,6 +222,78 @@ src/align_SAGs.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/scLJA.dir/build.make CMakeFiles/scLJA.dir/src/align_SAGs.cpp.s
 .PHONY : src/align_SAGs.cpp.s
 
+src/dot_graph.obj: src/dot_graph.cpp.obj
+.PHONY : src/dot_graph.obj
+
+# target to build an object file
+src/dot_graph.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scLJA.dir/build.make CMakeFiles/scLJA.dir/src/dot_graph.cpp.obj
+.PHONY : src/dot_graph.cpp.obj
+
+src/dot_graph.i: src/dot_graph.cpp.i
+.PHONY : src/dot_graph.i
+
+# target to preprocess a source file
+src/dot_graph.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scLJA.dir/build.make CMakeFiles/scLJA.dir/src/dot_graph.cpp.i
+.PHONY : src/dot_graph.cpp.i
+
+src/dot_graph.s: src/dot_graph.cpp.s
+.PHONY : src/dot_graph.s
+
+# target to generate assembly for a file
+src/dot_graph.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scLJA.dir/build.make CMakeFiles/scLJA.dir/src/dot_graph.cpp.s
+.PHONY : src/dot_graph.cpp.s
+
+src/dot_io.obj: src/dot_io.cpp.obj
+.PHONY : src/dot_io.obj
+
+# target to build an object file
+src/dot_io.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scLJA.dir/build.make CMakeFiles/scLJA.dir/src/dot_io.cpp.obj
+.PHONY : src/dot_io.cpp.obj
+
+src/dot_io.i: src/dot_io.cpp.i
+.PHONY : src/dot_io.i
+
+# target to preprocess a source file
+src/dot_io.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scLJA.dir/build.make CMakeFiles/scLJA.dir/src/dot_io.cpp.i
+.PHONY : src/dot_io.cpp.i
+
+src/dot_io.s: src/dot_io.cpp.s
+.PHONY : src/dot_io.s
+
+# target to generate assembly for a file
+src/dot_io.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scLJA.dir/build.make CMakeFiles/scLJA.dir/src/dot_io.cpp.s
+.PHONY : src/dot_io.cpp.s
+
+src/dot_simplify.obj: src/dot_simplify.cpp.obj
+.PHONY : src/dot_simplify.obj
+
+# target to build an object file
+src/dot_simplify.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scLJA.dir/build.make CMakeFiles/scLJA.dir/src/dot_simplify.cpp.obj
+.PHONY : src/dot_simplify.cpp.obj
+
+src/dot_simplify.i: src/dot_simplify.cpp.i
+.PHONY : src/dot_simplify.i
+
+# target to preprocess a source file
+src/dot_simplify.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scLJA.dir/build.make CMakeFiles/scLJA.dir/src/dot_simplify.cpp.i
+.PHONY : src/dot_simplify.cpp.i
+
+src/dot_simplify.s: src/dot_simplify.cpp.s
+.PHONY : src/dot_simplify.s
+
+# target to generate assembly for a file
+src/dot_simplify.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scLJA.dir/build.make CMakeFiles/scLJA.dir/src/dot_simplify.cpp.s
+.PHONY : src/dot_simplify.cpp.s
+
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -246,6 +318,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/scLJA.dir/build.make CMakeFiles/scLJA.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/process_GFA.obj: src/process_GFA.cpp.obj
+.PHONY : src/process_GFA.obj
+
+# target to build an object file
+src/process_GFA.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scLJA.dir/build.make CMakeFiles/scLJA.dir/src/process_GFA.cpp.obj
+.PHONY : src/process_GFA.cpp.obj
+
+src/process_GFA.i: src/process_GFA.cpp.i
+.PHONY : src/process_GFA.i
+
+# target to preprocess a source file
+src/process_GFA.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scLJA.dir/build.make CMakeFiles/scLJA.dir/src/process_GFA.cpp.i
+.PHONY : src/process_GFA.cpp.i
+
+src/process_GFA.s: src/process_GFA.cpp.s
+.PHONY : src/process_GFA.s
+
+# target to generate assembly for a file
+src/process_GFA.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scLJA.dir/build.make CMakeFiles/scLJA.dir/src/process_GFA.cpp.s
+.PHONY : src/process_GFA.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -259,15 +355,27 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... scLJA"
-	@echo "... src/GFA_graph.obj"
-	@echo "... src/GFA_graph.i"
-	@echo "... src/GFA_graph.s"
+	@echo "... lib/edlib/src/edlib.obj"
+	@echo "... lib/edlib/src/edlib.i"
+	@echo "... lib/edlib/src/edlib.s"
 	@echo "... src/align_SAGs.obj"
 	@echo "... src/align_SAGs.i"
 	@echo "... src/align_SAGs.s"
+	@echo "... src/dot_graph.obj"
+	@echo "... src/dot_graph.i"
+	@echo "... src/dot_graph.s"
+	@echo "... src/dot_io.obj"
+	@echo "... src/dot_io.i"
+	@echo "... src/dot_io.s"
+	@echo "... src/dot_simplify.obj"
+	@echo "... src/dot_simplify.i"
+	@echo "... src/dot_simplify.s"
 	@echo "... src/main.obj"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/process_GFA.obj"
+	@echo "... src/process_GFA.i"
+	@echo "... src/process_GFA.s"
 .PHONY : help
 
 

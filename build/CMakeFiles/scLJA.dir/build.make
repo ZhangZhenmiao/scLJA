@@ -72,24 +72,10 @@ include CMakeFiles/scLJA.dir/flags.make
 CMakeFiles/scLJA.dir/codegen:
 .PHONY : CMakeFiles/scLJA.dir/codegen
 
-CMakeFiles/scLJA.dir/src/GFA_graph.cpp.obj: CMakeFiles/scLJA.dir/flags.make
-CMakeFiles/scLJA.dir/src/GFA_graph.cpp.obj: /datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/src/GFA_graph.cpp
-CMakeFiles/scLJA.dir/src/GFA_graph.cpp.obj: CMakeFiles/scLJA.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/scLJA.dir/src/GFA_graph.cpp.obj"
-	/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scLJA.dir/src/GFA_graph.cpp.obj -MF CMakeFiles/scLJA.dir/src/GFA_graph.cpp.obj.d -o CMakeFiles/scLJA.dir/src/GFA_graph.cpp.obj -c /datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/src/GFA_graph.cpp
-
-CMakeFiles/scLJA.dir/src/GFA_graph.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/scLJA.dir/src/GFA_graph.cpp.i"
-	/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/src/GFA_graph.cpp > CMakeFiles/scLJA.dir/src/GFA_graph.cpp.i
-
-CMakeFiles/scLJA.dir/src/GFA_graph.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/scLJA.dir/src/GFA_graph.cpp.s"
-	/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/src/GFA_graph.cpp -o CMakeFiles/scLJA.dir/src/GFA_graph.cpp.s
-
 CMakeFiles/scLJA.dir/src/align_SAGs.cpp.obj: CMakeFiles/scLJA.dir/flags.make
 CMakeFiles/scLJA.dir/src/align_SAGs.cpp.obj: /datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/src/align_SAGs.cpp
 CMakeFiles/scLJA.dir/src/align_SAGs.cpp.obj: CMakeFiles/scLJA.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/scLJA.dir/src/align_SAGs.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/scLJA.dir/src/align_SAGs.cpp.obj"
 	/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scLJA.dir/src/align_SAGs.cpp.obj -MF CMakeFiles/scLJA.dir/src/align_SAGs.cpp.obj.d -o CMakeFiles/scLJA.dir/src/align_SAGs.cpp.obj -c /datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/src/align_SAGs.cpp
 
 CMakeFiles/scLJA.dir/src/align_SAGs.cpp.i: cmake_force
@@ -100,10 +86,52 @@ CMakeFiles/scLJA.dir/src/align_SAGs.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/scLJA.dir/src/align_SAGs.cpp.s"
 	/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/src/align_SAGs.cpp -o CMakeFiles/scLJA.dir/src/align_SAGs.cpp.s
 
+CMakeFiles/scLJA.dir/src/dot_graph.cpp.obj: CMakeFiles/scLJA.dir/flags.make
+CMakeFiles/scLJA.dir/src/dot_graph.cpp.obj: /datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/src/dot_graph.cpp
+CMakeFiles/scLJA.dir/src/dot_graph.cpp.obj: CMakeFiles/scLJA.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/scLJA.dir/src/dot_graph.cpp.obj"
+	/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scLJA.dir/src/dot_graph.cpp.obj -MF CMakeFiles/scLJA.dir/src/dot_graph.cpp.obj.d -o CMakeFiles/scLJA.dir/src/dot_graph.cpp.obj -c /datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/src/dot_graph.cpp
+
+CMakeFiles/scLJA.dir/src/dot_graph.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/scLJA.dir/src/dot_graph.cpp.i"
+	/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/src/dot_graph.cpp > CMakeFiles/scLJA.dir/src/dot_graph.cpp.i
+
+CMakeFiles/scLJA.dir/src/dot_graph.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/scLJA.dir/src/dot_graph.cpp.s"
+	/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/src/dot_graph.cpp -o CMakeFiles/scLJA.dir/src/dot_graph.cpp.s
+
+CMakeFiles/scLJA.dir/src/dot_io.cpp.obj: CMakeFiles/scLJA.dir/flags.make
+CMakeFiles/scLJA.dir/src/dot_io.cpp.obj: /datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/src/dot_io.cpp
+CMakeFiles/scLJA.dir/src/dot_io.cpp.obj: CMakeFiles/scLJA.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/scLJA.dir/src/dot_io.cpp.obj"
+	/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scLJA.dir/src/dot_io.cpp.obj -MF CMakeFiles/scLJA.dir/src/dot_io.cpp.obj.d -o CMakeFiles/scLJA.dir/src/dot_io.cpp.obj -c /datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/src/dot_io.cpp
+
+CMakeFiles/scLJA.dir/src/dot_io.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/scLJA.dir/src/dot_io.cpp.i"
+	/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/src/dot_io.cpp > CMakeFiles/scLJA.dir/src/dot_io.cpp.i
+
+CMakeFiles/scLJA.dir/src/dot_io.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/scLJA.dir/src/dot_io.cpp.s"
+	/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/src/dot_io.cpp -o CMakeFiles/scLJA.dir/src/dot_io.cpp.s
+
+CMakeFiles/scLJA.dir/src/dot_simplify.cpp.obj: CMakeFiles/scLJA.dir/flags.make
+CMakeFiles/scLJA.dir/src/dot_simplify.cpp.obj: /datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/src/dot_simplify.cpp
+CMakeFiles/scLJA.dir/src/dot_simplify.cpp.obj: CMakeFiles/scLJA.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/scLJA.dir/src/dot_simplify.cpp.obj"
+	/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scLJA.dir/src/dot_simplify.cpp.obj -MF CMakeFiles/scLJA.dir/src/dot_simplify.cpp.obj.d -o CMakeFiles/scLJA.dir/src/dot_simplify.cpp.obj -c /datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/src/dot_simplify.cpp
+
+CMakeFiles/scLJA.dir/src/dot_simplify.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/scLJA.dir/src/dot_simplify.cpp.i"
+	/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/src/dot_simplify.cpp > CMakeFiles/scLJA.dir/src/dot_simplify.cpp.i
+
+CMakeFiles/scLJA.dir/src/dot_simplify.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/scLJA.dir/src/dot_simplify.cpp.s"
+	/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/src/dot_simplify.cpp -o CMakeFiles/scLJA.dir/src/dot_simplify.cpp.s
+
 CMakeFiles/scLJA.dir/src/main.cpp.obj: CMakeFiles/scLJA.dir/flags.make
 CMakeFiles/scLJA.dir/src/main.cpp.obj: /datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/src/main.cpp
 CMakeFiles/scLJA.dir/src/main.cpp.obj: CMakeFiles/scLJA.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/scLJA.dir/src/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/scLJA.dir/src/main.cpp.obj"
 	/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scLJA.dir/src/main.cpp.obj -MF CMakeFiles/scLJA.dir/src/main.cpp.obj.d -o CMakeFiles/scLJA.dir/src/main.cpp.obj -c /datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/src/main.cpp
 
 CMakeFiles/scLJA.dir/src/main.cpp.i: cmake_force
@@ -114,18 +142,54 @@ CMakeFiles/scLJA.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/scLJA.dir/src/main.cpp.s"
 	/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/src/main.cpp -o CMakeFiles/scLJA.dir/src/main.cpp.s
 
+CMakeFiles/scLJA.dir/src/process_GFA.cpp.obj: CMakeFiles/scLJA.dir/flags.make
+CMakeFiles/scLJA.dir/src/process_GFA.cpp.obj: /datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/src/process_GFA.cpp
+CMakeFiles/scLJA.dir/src/process_GFA.cpp.obj: CMakeFiles/scLJA.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/scLJA.dir/src/process_GFA.cpp.obj"
+	/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scLJA.dir/src/process_GFA.cpp.obj -MF CMakeFiles/scLJA.dir/src/process_GFA.cpp.obj.d -o CMakeFiles/scLJA.dir/src/process_GFA.cpp.obj -c /datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/src/process_GFA.cpp
+
+CMakeFiles/scLJA.dir/src/process_GFA.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/scLJA.dir/src/process_GFA.cpp.i"
+	/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/src/process_GFA.cpp > CMakeFiles/scLJA.dir/src/process_GFA.cpp.i
+
+CMakeFiles/scLJA.dir/src/process_GFA.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/scLJA.dir/src/process_GFA.cpp.s"
+	/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/src/process_GFA.cpp -o CMakeFiles/scLJA.dir/src/process_GFA.cpp.s
+
+CMakeFiles/scLJA.dir/lib/edlib/src/edlib.cpp.obj: CMakeFiles/scLJA.dir/flags.make
+CMakeFiles/scLJA.dir/lib/edlib/src/edlib.cpp.obj: /datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/lib/edlib/src/edlib.cpp
+CMakeFiles/scLJA.dir/lib/edlib/src/edlib.cpp.obj: CMakeFiles/scLJA.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/scLJA.dir/lib/edlib/src/edlib.cpp.obj"
+	/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scLJA.dir/lib/edlib/src/edlib.cpp.obj -MF CMakeFiles/scLJA.dir/lib/edlib/src/edlib.cpp.obj.d -o CMakeFiles/scLJA.dir/lib/edlib/src/edlib.cpp.obj -c /datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/lib/edlib/src/edlib.cpp
+
+CMakeFiles/scLJA.dir/lib/edlib/src/edlib.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/scLJA.dir/lib/edlib/src/edlib.cpp.i"
+	/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/lib/edlib/src/edlib.cpp > CMakeFiles/scLJA.dir/lib/edlib/src/edlib.cpp.i
+
+CMakeFiles/scLJA.dir/lib/edlib/src/edlib.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/scLJA.dir/lib/edlib/src/edlib.cpp.s"
+	/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/lib/edlib/src/edlib.cpp -o CMakeFiles/scLJA.dir/lib/edlib/src/edlib.cpp.s
+
 # Object files for target scLJA
 scLJA_OBJECTS = \
-"CMakeFiles/scLJA.dir/src/GFA_graph.cpp.obj" \
 "CMakeFiles/scLJA.dir/src/align_SAGs.cpp.obj" \
-"CMakeFiles/scLJA.dir/src/main.cpp.obj"
+"CMakeFiles/scLJA.dir/src/dot_graph.cpp.obj" \
+"CMakeFiles/scLJA.dir/src/dot_io.cpp.obj" \
+"CMakeFiles/scLJA.dir/src/dot_simplify.cpp.obj" \
+"CMakeFiles/scLJA.dir/src/main.cpp.obj" \
+"CMakeFiles/scLJA.dir/src/process_GFA.cpp.obj" \
+"CMakeFiles/scLJA.dir/lib/edlib/src/edlib.cpp.obj"
 
 # External object files for target scLJA
 scLJA_EXTERNAL_OBJECTS =
 
-bin/scLJA: CMakeFiles/scLJA.dir/src/GFA_graph.cpp.obj
 bin/scLJA: CMakeFiles/scLJA.dir/src/align_SAGs.cpp.obj
+bin/scLJA: CMakeFiles/scLJA.dir/src/dot_graph.cpp.obj
+bin/scLJA: CMakeFiles/scLJA.dir/src/dot_io.cpp.obj
+bin/scLJA: CMakeFiles/scLJA.dir/src/dot_simplify.cpp.obj
 bin/scLJA: CMakeFiles/scLJA.dir/src/main.cpp.obj
+bin/scLJA: CMakeFiles/scLJA.dir/src/process_GFA.cpp.obj
+bin/scLJA: CMakeFiles/scLJA.dir/lib/edlib/src/edlib.cpp.obj
 bin/scLJA: CMakeFiles/scLJA.dir/build.make
 bin/scLJA: /home/comp/zmzhang/software/anaconda3/envs/sclja/lib/libhts.so
 bin/scLJA: /home/comp/zmzhang/software/anaconda3/envs/sclja/lib/libz.so
@@ -136,7 +200,7 @@ bin/scLJA: /home/comp/zmzhang/software/anaconda3/envs/sclja/lib/libcrypto.so
 bin/scLJA: /home/comp/zmzhang/software/anaconda3/envs/sclja/lib/gcc/x86_64-conda-linux-gnu/14.2.0/libgomp.so
 bin/scLJA: /home/comp/zmzhang/software/anaconda3/envs/sclja/x86_64-conda-linux-gnu/sysroot/usr/lib/libpthread.so
 bin/scLJA: CMakeFiles/scLJA.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable bin/scLJA"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable bin/scLJA"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/scLJA.dir/link.txt --verbose=$(VERBOSE)
 	/home/comp/zmzhang/software/anaconda3/envs/sclja/bin/cmake -E copy /datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/build/bin/scLJA /datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/bin/scLJA
 

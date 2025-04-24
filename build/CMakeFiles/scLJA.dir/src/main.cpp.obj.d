@@ -203,9 +203,17 @@ CMakeFiles/scLJA.dir/src/main.cpp.obj: \
  /home/comp/zmzhang/software/anaconda3/envs/sclja/lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++/bits/hashtable.h \
  /home/comp/zmzhang/software/anaconda3/envs/sclja/lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++/bits/hashtable_policy.h \
  /home/comp/zmzhang/software/anaconda3/envs/sclja/lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++/bits/enable_special_members.h \
- /datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/src/GFA_graph.hpp \
+ /datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/src/process_GFA.hpp \
  /home/comp/zmzhang/software/anaconda3/envs/sclja/lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++/vector \
  /home/comp/zmzhang/software/anaconda3/envs/sclja/lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++/bits/stl_uninitialized.h \
  /home/comp/zmzhang/software/anaconda3/envs/sclja/lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++/bits/stl_vector.h \
  /home/comp/zmzhang/software/anaconda3/envs/sclja/lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++/bits/stl_bvector.h \
- /home/comp/zmzhang/software/anaconda3/envs/sclja/lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++/bits/vector.tcc
+ /home/comp/zmzhang/software/anaconda3/envs/sclja/lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++/bits/vector.tcc \
+ /home/comp/zmzhang/software/anaconda3/envs/sclja/lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++/memory \
+ /home/comp/zmzhang/software/anaconda3/envs/sclja/lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++/bits/stl_raw_storage_iter.h \
+ /home/comp/zmzhang/software/anaconda3/envs/sclja/lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++/bits/align.h \
+ /home/comp/zmzhang/software/anaconda3/envs/sclja/lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++/bits/shared_ptr_atomic.h \
+ /home/comp/zmzhang/software/anaconda3/envs/sclja/lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++/bits/atomic_base.h \
+ /home/comp/zmzhang/software/anaconda3/envs/sclja/lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++/bits/atomic_lockfree_defines.h \
+ /home/comp/zmzhang/software/anaconda3/envs/sclja/lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++/backward/auto_ptr.h \
+ /home/comp/zmzhang/software/anaconda3/envs/sclja/lib/gcc/x86_64-conda-linux-gnu/14.2.0/include/c++/pstl/glue_memory_defs.h

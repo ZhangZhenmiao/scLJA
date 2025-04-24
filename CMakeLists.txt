@@ -4,6 +4,11 @@ project(scLJA
     LANGUAGES CXX
 )
 
+# Default to Release if no build type is specified
+if(NOT CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE Debug)
+endif()
+
 #----------------------------------------------------------------
 # 1. Basic Configuration
 #----------------------------------------------------------------
@@ -69,12 +74,13 @@ find_path(ZLIB_INCLUDE_DIR zlib.h PATHS "${CONDA_INCLUDE_DIR}" NO_DEFAULT_PATH R
 file(GLOB_RECURSE SOURCES "src/*.cpp")
 file(GLOB_RECURSE HEADERS "src/*.hpp" "src/*.h")
 
-add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
+add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS} lib/edlib/src/edlib.cpp)
 
 target_include_directories(${PROJECT_NAME} PRIVATE
     src
     ${HTS_INCLUDE_DIR}
     ${ZLIB_INCLUDE_DIR}
+    lib/edlib/include
 )
 
 target_link_libraries(${PROJECT_NAME} PRIVATE
@@ -91,6 +97,12 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
 if(CMAKE_CXX_COMPILER_ID MATCHES "GNU" AND CMAKE_CXX_COMPILER_VERSION VERSION_LESS 9.0)
     target_link_libraries(${PROJECT_NAME} PRIVATE stdc++fs)
 endif()
+
+target_compile_options(${PROJECT_NAME} PRIVATE
+    $<$<CONFIG:Release>:-O3>
+    $<$<CONFIG:Debug>:-g>
+    ${OpenMP_CXX_FLAGS}
+)
 
 #----------------------------------------------------------------
 # 5. Installation (optional)
