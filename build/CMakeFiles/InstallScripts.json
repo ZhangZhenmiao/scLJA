@@ -1,7 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/datahome/datasets/ericteam/zmzhang/Microbe_Seq/scLJA/build/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

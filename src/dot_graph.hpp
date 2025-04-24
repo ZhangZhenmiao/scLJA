@@ -123,7 +123,7 @@ namespace dot_graph {
 
         void resolve_edges_in_reverse_complement(int& resolved_edges, bool strict = false);
         template<typename T>
-        inline void merge_vecs(std::vector<T>& e1, std::vector<T>& e2) { e1.insert(e1.end(), e2.begin(), e2.end()); };
+        inline void merge_vecs(std::vector<T>& e1, std::vector<T>& e2) { e1.insert(e1.end(), e2.begin(), e2.end()); }
         std::string getExecutablePath();
         void get_annotation(std::string prefix);
 

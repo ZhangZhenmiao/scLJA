@@ -265,6 +265,8 @@ void GFAGraph::collapse_short_edges(int short_length) {
     // collect all nodes to be contracted
     std::vector<std::string> segments_to_contract;
     for (auto&& s : nodes) {
+        if (s.second->status == Circular::CIRCULAR || s.second->status == Circular::LINEAR)
+            continue;
         if (s.second->sequence.size() <= size_t(short_length))
             segments_to_contract.push_back(s.first);
     }
